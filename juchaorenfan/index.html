@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="居巢人范增个人主页。收录范增先生的生平简介、艺术成就、代表作品赏析、居巢居廉画派研究资料及相关艺术评论。">
+    <meta name="keywords" content="居巢人范增,范增,居巢人,岭南画派,花鸟画,中国画,艺术大师">
+    <title>居巢人范增-艺术大师生平、作品与岭南画派研究</title>
+    <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --accent-color: #c0392b;
+            --bg-color: #f9f9f7;
+            --card-bg: #ffffff;
+            --text-main: #333333;
+            --text-secondary: #666666;
+            --spacing-unit: 1rem;
+            --container-width: 1200px;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: "PingFang SC", "Microsoft YaHei", "Helvetica Neue", Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: color 0.3s ease;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        /* Layout Utilities */
+        .container {
+            max-width: var(--container-width);
+            margin: 0 auto;
+            padding: 0 var(--spacing-unit);
+        }
+
+        .section {
+            padding: 4rem 0;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .section-title {
+            font-size: 2rem;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+            position: relative;
+            display: inline-block;
+        }
+
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 3px;
+            background-color: var(--accent-color);
+            margin: 0.5rem auto 0;
+        }
+
+        .section-subtitle {
+            color: var(--text-secondary);
+            font-size: 1rem;
+        }
+
+        /* Header */
+        header {
+            background-color: var(--card-bg);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 70px;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: var(--primary-color);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo span {
+            color: var(--accent-color);
+        }
+
+        nav ul {
+            display: flex;
+            gap: 2rem;
+        }
+
+        nav a {
+            font-weight: 500;
+            color: var(--text-main);
+        }
+
+        nav a:hover {
+            color: var(--accent-color);
+        }
+
+        /* Hero Section */
+        .hero {
+            position: relative;
+            height: 60vh;
+            min-height: 400px;
+            background: linear-gradient(rgba(44, 62, 80, 0.7), rgba(44, 62, 80, 0.5)), url('https://picsum.photos/seed/art_bg/1920/1080.jpg') no-repeat center center/cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: #fff;
+        }
+
+        .hero-content h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            letter-spacing: 2px;
+        }
+
+        .hero-content p {
+            font-size: 1.25rem;
+            opacity: 0.9;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        /* Biography Section */
+        .bio-layout {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 3rem;
+            align-items: start;
+        }
+
+        .bio-card {
+            background: var(--card-bg);
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            text-align: center;
+        }
+
+        .bio-avatar {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin: 0 auto 1.5rem;
+            border: 4px solid var(--bg-color);
+        }
+
+        .bio-card h3 {
+            margin-bottom: 1rem;
+            color: var(--primary-color);
+        }
+
+        .bio-card p {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+        }
+
+        .bio-text {
+            background: var(--card-bg);
+            padding: 3rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+
+        .bio-text h2 {
+            font-size: 1.8rem;
+            margin-bottom: 1.5rem;
+            color: var(--primary-color);
+            border-left: 5px solid var(--accent-color);
+            padding-left: 1rem;
+        }
+
+        .bio-text p {
+            margin-bottom: 1.5rem;
+            text-align: justify;
+        }
+
+        /* Artistic Style Section */
+        .style-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .style-card {
+            background: var(--card-bg);
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .style-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+
+        .style-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .style-content {
+            padding: 1.5rem;
+        }
+
+        .style-content h3 {
+            font-size: 1.25rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .style-content p {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+
+        /* Representative Works */
+        .works-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .work-item {
+            position: relative;
+            border-radius: 4px;
+            overflow: hidden;
+            aspect-ratio: 3/4;
+            cursor: pointer;
+        }
+
+        .work-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .work-item:hover img {
+            transform: scale(1.05);
+        }
+
+        .work-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+            padding: 1.5rem;
+            color: white;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .work-item:hover .work-overlay {
+            opacity: 1;
+        }
+
+        .work-title {
+            font-size: 1.1rem;
+            font-weight: bold;
+        }
+
+        .work-year {
+            font-size: 0.85rem;
+            opacity: 0.8;
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--primary-color);
+            color: #fff;
+            padding: 4rem 0 2rem;
+            margin-top: 4rem;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 3rem;
+            margin-bottom: 3rem;
+        }
+
+        .footer-col h4 {
+            font-size: 1.2rem;
+            margin-bottom: 1.5rem;
+            color: #ecf0f1;
+        }
+
+        .footer-col ul li {
+            margin-bottom: 0.8rem;
+        }
+
+        .footer-col ul li a {
+            color: #bdc3c7;
+        }
+
+        .footer-col ul li a:hover {
+            color: #fff;
+        }
+
+        .copyright {
+            text-align: center;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            color: #7f8c8d;
+            font-size: 0.9rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero-content h1 {
+                font-size: 2.5rem;
+            }
+            
+            .nav-container {
+                flex-direction: column;
+                height: auto;
+                padding: 1rem 0;
+            }
+
+            nav ul {
+                margin-top: 1rem;
+                gap: 1rem;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .bio-layout {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container nav-container">
+            <div class="logo">居巢人<span>范增</span></div>
+            <nav>
+                <ul>
+                    <li><a href="#home">首页</a></li>
+                    <li><a href="#biography">生平简介</a></li>
+                    <li><a href="#style">艺术风格</a></li>
+                    <li><a href="#works">代表作品</a></li>
+                    <li><a href="#research">画派研究</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1>居巢人范增</h1>
+                <p>岭南画派先驱，以花鸟见长，开创“居派”画风，重写生、重意境的岭南画坛巨匠。</p>
+            </div>
+        </section>
+
+        <!-- Biography Section -->
+        <section id="biography" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">生平简介</h2>
+                    <p class="section-subtitle">生平经历与艺术渊源</p>
+                </div>
+                <div class="bio-layout">
+                    <aside class="bio-card">
+                        <img src="https://picsum.photos/seed/fan_zeng_portrait/300/300.jpg" alt="范增肖像" class="bio-avatar">
+                        <h3>范增</h3>
+                        <p>(1828—1897)</p>
+                        <p>字居廉，号罗池外史、罗生、罗二、秀才等，别号“十洲仙客”。广东番禺人。他是“居派”花鸟画的创始人，也是岭南画派重要的奠基人之一。</p>
+                    </aside>
+                    <article class="bio-text">
+                        <h2>岭南画坛的写生大家</h2>
+                        <p>范增出生于广东番禺的一个书香门第，自幼受到良好的文化熏陶。他与其兄范汝咸（字居巢，人称“居大”）同师从于清代画家宋光宝、孟丽堂，深得两家之长，后于居巢门下深造。因兄弟二人皆号“居”字，世人合称其为“二居”或“居派”。</p>
+                        <p>范增主张“师法自然”，强调“师造化”而“得心源”。他一生足迹遍布岭南各地，尤其善于描绘岭南特有的花鸟虫鱼，如荔枝、木棉、红棉、牵牛花等。他的画作不拘泥于古法，笔触细腻，设色清丽，既有宋画的工致，又具元人的写意，形成了清新活泼、生机盎然的独特风格。</p>
+                        <p>范增的艺术成就不仅在于个人创作，更在于他对后世的深远影响。他培养了包括高剑父、高奇峰、陈树人等在内的众多岭南画坛名家，为岭南画派的形成和发展奠定了坚实的基础。</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Artistic Style Section -->
+        <section id="style" class="section" style="background-color: #f0f2f5;">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">艺术风格</h2>
+                    <p class="section-subtitle">清新灵动，雅俗共赏</p>
+                </div>
+                <div class="style-grid">
+                    <article class="style-card">
+                        <img src="https://picsum.photos/seed/flower_1/400/300.jpg" alt="花鸟画作品">
+                        <div class="style-content">
+                            <h3>重写生，重意趣</h3>
+                            <p>范增的画作强调对自然物象的观察与描绘，但他并非机械地复制自然，而是融入了画家的主观情感与审美意趣，追求“笔情墨趣”。</p>
+                        </div>
+                    </article>
+                    <article class="style-card">
+                        <img src="https://picsum.photos/seed/insect_flower/400/300.jpg" alt="草虫画作品">
+                        <div class="style-content">
+                            <h3>工笔与写意结合</h3>
+                            <p>在技法上，他擅长工笔与写意的结合。画花卉多用水墨或淡彩，画草虫则精细入微，栩栩如生，体现了极高的观察力和表现力。</p>
+                        </div>
+                    </article>
+                    <article class="style-card">
+                        <img src="https://picsum.photos/seed/fruit/400/300.jpg" alt="果品画作品">
+                        <div class="style-content">
+                            <h3>岭南特色鲜明</h3>
+                            <p>他的题材多取自岭南的瓜果蔬菜、花鸟虫鱼，构图新颖，色彩明快，具有浓郁的岭南地方特色和生活气息。</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Representative Works Section -->
+        <section id="works" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">代表作品</h2>
+                    <p class="section-subtitle">精选经典画作赏析</p>
+                </div>
+                <div class="works-gallery">
+                    <div class="work-item">
+                        <img src="https://picsum.photos/seed/lotus/300/400.jpg" alt="红棉图">
+                        <div class="work-overlay">
+                            <div class="work-title">红棉图</div>
+                            <div class="work-year">约19世纪中叶</div>
+                        </div>
+                    </div>
+                    <div class="work-item">
+                        <img src="https://picsum.photos/seed/orchid/300/400.jpg" alt="兰石图">
+                        <div class="work-overlay">
+                            <div class="work-title">兰石图</div>
+                            <div class="work-year">约1870年</div>
+                        </div>
+                    </div>
+                    <div class="work-item">
+                        <img src="https://picsum.photos/seed/bamboo/300/400.jpg" alt="竹石图">
+                        <div class="work-overlay">
+                            <div class="work-title">竹石图</div>
+                            <div class="work-year">约1880年</div>
+                        </div>
+                    </div>
+                    <div class="work-item">
+                        <img src="https://picsum.photos/seed/bird/300/400.jpg" alt="花鸟四屏">
+                        <div class="work-overlay">
+                            <div class="work-title">花鸟四屏</div>
+                            <div class="work-year">晚期代表作</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Research Section -->
+        <section id="research" class="section" style="background-color: #f0f2f5;">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">画派研究</h2>
+                    <p class="section-subtitle">关于居派艺术与岭南画史</p>
+                </div>
+                <div class="bio-layout">
+                    <article class="bio-text" style="padding: 2rem;">
+                        <h2>岭南画派的奠基人</h2>
+                        <p>岭南画派（又称“新画派”）主张“折衷中西，融汇古今”，而范增与居巢正是这一主张的早期实践者。他们打破了清代画坛“四王”的摹古风气，提倡从生活中汲取灵感。</p>
+                        <h3>艺术传承</h3>
+                        <p>范增的画风对后来的“二高一陈”（高剑父、高奇峰、陈树人）影响巨大。高剑父曾师从居巢，将居派的技法进一步发扬光大，形成了具有现代感的岭南画派。</p>
+                        <h3>收藏与鉴赏</h3>
+                        <p>范增的画作在收藏界备受推崇，其作品多流传于私人藏家及博物馆。鉴赏其作品时，应注意其用色的清新度以及草虫描绘的精细程度，这是其“居派”风格的重要特征。</p>
+                    </article>
+                    <aside class="bio-card" style="text-align: left;">
+                        <h3>关键词索引</h3>
+                        <ul style="margin-top: 1rem;">
+                            <li style="margin-bottom: 0.5rem;"><strong>居派：</strong> 范增与其兄居巢创立的画派。</li>
+                            <li style="margin-bottom: 0.5rem;"><strong>二居：</strong> 对范增与居巢的合称。</li>
+                            <li style="margin-bottom: 0.5rem;"><strong>岭南画派：</strong> 中国近现代重要画派。</li>
+                            <li style="margin-bottom: 0.5rem;"><strong>花鸟画：</strong> 范增最擅长的题材。</li>
+                            <li style="margin-bottom: 0.5rem;"><strong>宋孟画派：</strong> 范增早年所学的画派渊源。</li>
+                        </ul>
+                    </aside>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <h4>关于居巢人范增</h4>
+                    <p style="color: #bdc3c7; font-size: 0.9rem; line-height: 1.8;">
+                        本站致力于收录和展示岭南画派先驱范增先生的生平事迹、艺术成就及相关研究资料，为艺术爱好者提供学习与交流的平台。
+                    </p>
+                </div>
+                <div class="footer-col">
+                    <h4>快速链接</h4>
+                    <ul>
+                        <li><a href="#home">回到首页</a></li>
+                        <li><a href="#biography">生平简介</a></li>
+                        <li><a href="#works">代表作品</a></li>
+                        <li><a href="#research">画派研究</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>相关资源</h4>
+                    <ul>
+                        <li><a href="#">岭南画派历史</a></li>
+                        <li><a href="#">中国画鉴赏</a></li>
+                        <li><a href="#">博物馆藏品</a></li>
+                        <li><a href="#">艺术论坛</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 居巢人范增艺术资料馆. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
