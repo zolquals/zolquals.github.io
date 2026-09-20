@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dnfx键连发程序下载 - 高效辅助工具与安全使用指南</title>
+    <meta name="description" content="dnfx键连发程序下载官方页面。提供稳定、安全的按键连发工具，详细说明功能特点、系统兼容性、使用教程及注意事项，帮助用户合规高效地提升操作体验。">
+    <meta name="keywords" content="dnfx键连发程序下载,按键连发,辅助工具,操作辅助,软件下载">
+    <style>
+        :root {
+            --primary-color: #2563eb;
+            --primary-hover: #1d4ed8;
+            --bg-color: #f8fafc;
+            --card-bg: #ffffff;
+            --text-main: #1e293b;
+            --text-secondary: #64748b;
+            --border-color: #e2e8f0;
+            --success-color: #10b981;
+            --warning-color: #f59e0b;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+            line-height: 1.6;
+            color: var(--text-main);
+            background-color: var(--bg-color);
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        /* Header */
+        header {
+            background-color: var(--card-bg);
+            border-bottom: 1px solid var(--border-color);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .nav-wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 64px;
+        }
+
+        .logo {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 24px;
+        }
+
+        .nav-links a {
+            font-size: 0.95rem;
+            color: var(--text-secondary);
+            transition: color 0.2s;
+        }
+
+        .nav-links a:hover, .nav-links a.active {
+            color: var(--primary-color);
+        }
+
+        .btn-download-nav {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 8px 20px;
+            border-radius: 6px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            transition: background-color 0.2s;
+        }
+
+        .btn-download-nav:hover {
+            background-color: var(--primary-hover);
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #eff6ff 0%, #ffffff 100%);
+            padding: 60px 0;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 16px;
+            color: var(--text-main);
+        }
+
+        .hero p {
+            font-size: 1.1rem;
+            color: var(--text-secondary);
+            max-width: 600px;
+            margin: 0 auto 32px;
+        }
+
+        .download-box {
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 24px;
+            display: inline-flex;
+            align-items: center;
+            gap: 20px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+            width: 100%;
+        }
+
+        .file-icon {
+            font-size: 3rem;
+            color: var(--primary-color);
+        }
+
+        .file-info {
+            text-align: left;
+            flex: 1;
+        }
+
+        .file-name {
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-bottom: 4px;
+        }
+
+        .file-size {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+
+        .btn-primary {
+            background-color: var(--primary-color);
+            color: white;
+            border: none;
+            padding: 12px 32px;
+            border-radius: 8px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s;
+            white-space: nowrap;
+        }
+
+        .btn-primary:hover {
+            background-color: var(--primary-hover);
+            transform: translateY(-1px);
+        }
+
+        .btn-secondary {
+            background-color: white;
+            color: var(--text-main);
+            border: 1px solid var(--border-color);
+            padding: 12px 24px;
+            border-radius: 8px;
+            font-size: 0.95rem;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .btn-secondary:hover {
+            background-color: #f1f5f9;
+        }
+
+        /* Features */
+        .section {
+            padding: 60px 0;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 1.8rem;
+            margin-bottom: 40px;
+            position: relative;
+        }
+
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 4px;
+            background-color: var(--primary-color);
+            margin: 12px auto 0;
+            border-radius: 2px;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+
+        .feature-card {
+            background: var(--card-bg);
+            padding: 30px;
+            border-radius: 12px;
+            border: 1px solid var(--border-color);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+        }
+
+        .feature-icon {
+            width: 50px;
+            height: 50px;
+            background-color: #eff6ff;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+            color: var(--primary-color);
+        }
+
+        .feature-card h3 {
+            font-size: 1.25rem;
+            margin-bottom: 12px;
+        }
+
+        .feature-card p {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+        }
+
+        /* Tutorial Section */
+        .tutorial {
+            background-color: var(--card-bg);
+        }
+
+        .steps-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+        }
+
+        .step-item {
+            position: relative;
+            padding-left: 30px;
+        }
+
+        .step-number {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 24px;
+            height: 24px;
+            background-color: var(--primary-color);
+            color: white;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 24px;
+            font-weight: 700;
+            font-size: 0.9rem;
+        }
+
+        .step-item h4 {
+            font-size: 1.1rem;
+            margin-bottom: 8px;
+            margin-top: 8px;
+        }
+
+        .step-item p {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+        }
+
+        /* Compatibility Table */
+        .compatibility {
+            background-color: #f1f5f9;
+        }
+
+        .compat-table-wrapper {
+            overflow-x: auto;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            min-width: 600px;
+        }
+
+        th, td {
+            padding: 16px 24px;
+            text-align: left;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        th {
+            background-color: #f8fafc;
+            font-weight: 600;
+            color: var(--text-main);
+        }
+
+        tr:last-child td {
+            border-bottom: none;
+        }
+
+        .status-badge {
+            display: inline-block;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 500;
+        }
+
+        .status-ok {
+            background-color: #d1fae5;
+            color: #065f46;
+        }
+
+        .status-warn {
+            background-color: #fef3c7;
+            color: #92400e;
+        }
+
+        /* Safety Notice */
+        .notice-section {
+            border: 1px solid #fee2e2;
+            background-color: #fef2f2;
+            border-radius: 8px;
+            padding: 24px;
+            margin-top: 40px;
+            display: flex;
+            gap: 20px;
+            align-items: flex-start;
+        }
+
+        .notice-icon {
+            color: #ef4444;
+            flex-shrink: 0;
+        }
+
+        .notice-content h4 {
+            color: #991b1b;
+            margin-bottom: 8px;
+        }
+
+        .notice-content p {
+            color: #7f1d1d;
+            font-size: 0.95rem;
+        }
+
+        /* FAQ */
+        .faq {
+            background-color: var(--card-bg);
+        }
+
+        .faq-item {
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .faq-question {
+            width: 100%;
+            text-align: left;
+            background: none;
+            border: none;
+            padding: 24px 0;
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--text-main);
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .faq-question::after {
+            content: '+';
+            font-size: 1.5rem;
+            color: var(--primary-color);
+            transition: transform 0.3s;
+        }
+
+        .faq-item.active .faq-question::after {
+            transform: rotate(45deg);
+        }
+
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+            color: var(--text-secondary);
+        }
+
+        .faq-item.active .faq-answer {
+            max-height: 300px;
+            padding-bottom: 24px;
+        }
+
+        .faq-answer p {
+            padding-right: 20px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #1e293b;
+            color: #94a3b8;
+            padding: 40px 0 20px;
+            font-size: 0.9rem;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .footer-col h5 {
+            color: white;
+            margin-bottom: 20px;
+            font-size: 1.1rem;
+        }
+
+        .footer-col ul li {
+            margin-bottom: 10px;
+        }
+
+        .footer-col ul li a:hover {
+            color: white;
+        }
+
+        .copyright {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid #334155;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+            
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+
+            .download-box {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .file-info {
+                text-align: center;
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="container nav-wrapper">
+        <div class="logo">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+            Dnfx工具箱
+        </div>
+        <nav class="nav-links">
+            <a href="#" class="active">首页</a>
+            <a href="#features">功能介绍</a>
+            <a href="#tutorial">使用教程</a>
+            <a href="#faq">常见问题</a>
+        </nav>
+        <a href="#download" class="btn-download-nav">立即下载</a>
+    </div>
+</header>
+
+<main>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>dnfx键连发程序下载</h1>
+            <p>专为高频操作场景设计的辅助工具，支持自定义连发间隔，稳定兼容主流操作系统，助您提升操作效率。</p>
+            
+            <div id="download" class="download-box">
+                <div class="file-icon">
+                    <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                </div>
+                <div class="file-info">
+                    <div class="file-name">DnfxKeyMacro_v2.4.0_Setup.exe</div>
+                    <div class="file-size">大小: 8.5 MB | MD5: 8f2a...9c1e</div>
+                </div>
+                <button class="btn-primary" onclick="startDownload()">下载程序</button>
+                <button class="btn-secondary" onclick="openGuide()">查看教程</button>
+            </div>
+
+            <div class="notice-section">
+                <div class="notice-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path><line x1="12" y1="9" x2="12" y2="13"></line><line x1="12" y1="17" x2="12.01" y2="17"></line></svg>
+                </div>
+                <div class="notice-content">
+                    <h4>安全提示</h4>
+                    <p>本程序仅作为系统级按键模拟工具，请勿用于任何涉及外挂、作弊或破坏游戏平衡的用途。请遵守相关法律法规及平台规则。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features -->
+    <section id="features" class="section">
+        <div class="container">
+            <h2 class="section-title">核心功能特点</h2>
+            <div class="features-grid">
+                <article class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg>
+                    </div>
+                    <h3>极速响应引擎</h3>
+                    <p>采用底层钩子技术，实现毫秒级按键响应，有效解决传统输入法延迟问题，确保连发动作流畅自然。</p>
+                </article>
+                <article class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
+                    </div>
+                    <h3>灵活参数配置</h3>
+                    <p>支持自定义连发间隔（毫秒级调节）、循环次数及按键映射，满足不同应用场景的个性化需求。</p>
+                </article>
+                <article class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                    </div>
+                    <h3>系统安全防护</h3>
+                    <p>内置病毒扫描与防篡改机制，所有操作均在本地沙箱环境下进行，不上传任何数据，保护用户隐私。</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tutorial -->
+    <section id="tutorial" class="section tutorial">
+        <div class="container">
+            <h2 class="section-title">快速上手指南</h2>
+            <div class="steps-container">
+                <div class="step-item">
+                    <div class="step-number">1</div>
+                    <h4>安装程序</h4>
+                    <p>下载安装包后，双击运行安装程序，按照向导提示完成安装。默认安装路径为 C:\Program Files\DnfxKeyMacro。</p>
+                </div>
+                <div class="step-item">
+                    <div class="step-number">2</div>
+                    <h4>添加宏命令</h4>
+                    <p>打开主程序，点击“添加新命令”。在快捷键设置中选择触发按键（如F1），在动作列表中添加“按下A键”和“释放A键”指令。</p>
+                </div>
+                <div class="step-item">
+                    <div class="step-number">3</div>
+                    <h4>调整参数</h4>
+                    <p>在设置面板中，将“循环次数”设置为无限，将“间隔时间”调整为 50ms，以获得最佳手感。</p>
+                </div>
+                <div class="step-item">
+                    <div class="step-number">4</div>
+                    <h4>启用与测试</h4>
+                    <p>点击“启用”按钮激活程序。按下设置好的快捷键即可测试连发效果。如需停止，再次按下快捷键或按ESC键退出。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Compatibility -->
+    <section class="section compatibility">
+        <div class="container">
+            <h2 class="section-title">系统兼容性</h2>
+            <div class="compat-table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>操作系统</th>
+                            <th>版本要求</th>
+                            <th>兼容状态</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Windows 11</td>
+                            <td>22H2 及以上</td>
+                            <td><span class="status-badge status-ok">完全兼容</span></td>
+                        </tr>
+                        <tr>
+                            <td>Windows 10</td>
+                            <td>1809 及以上</td>
+                            <td><span class="status-badge status-ok">完全兼容</span></td>
+                        </tr>
+                        <tr>
+                            <td>Windows 8.1</td>
+                            <td>所有版本</td>
+                            <td><span class="status-badge status-ok">兼容</span></td>
+                        </tr>
+                        <tr>
+                            <td>Windows 7</td>
+                            <td>SP1 及以上</td>
+                            <td><span class="status-badge status-warn">需管理员权限</span></td>
+                        </tr>
+                        <tr>
+                            <td>macOS</td>
+                            <td>10.15 及以上</td>
+                            <td><span class="status-badge status-warn">仅支持部分功能</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="section faq">
+        <div class="container">
+            <h2 class="section-title">常见问题解答</h2>
+            <div class="faq-item">
+                <button class="faq-question">下载后的文件在哪里？</button>
+                <div class="faq-answer">
+                    <p>安装程序通常默认下载到您的浏览器“下载”文件夹中。如果找不到，请检查浏览器的下载历史记录，或尝试在“此电脑”->“下载”目录下查找。</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">程序是否支持多开？</button>
+                <div class="faq-answer">
+                    <p>支持。您可以创建多个配置文件并分别运行，或者使用虚拟机技术实现多开运行，具体取决于您的电脑性能配置。</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">连发时出现卡顿怎么办？</button>
+                <div class="faq-answer">
+                    <p>卡顿通常是因为电脑后台运行了占用资源过多的程序。建议在运行本工具时关闭不必要的杀毒软件实时监控或游戏加速器，并适当增加连发间隔时间。</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">如何卸载程序？</button>
+                <div class="faq-answer">
+                    <p>可以通过“控制面板”->“程序和功能”找到“DnfxKeyMacro”进行卸载。卸载时请确保勾选“删除用户配置数据”以彻底清除残留文件。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-col">
+                <h5>关于 Dnfx工具箱</h5>
+                <p>我们致力于提供简单、高效的系统辅助工具，帮助用户在合法合规的前提下优化操作体验。</p>
+            </div>
+            <div class="footer-col">
+                <h5>资源下载</h5>
+                <ul>
+                    <li><a href="#">Windows 版本</a></li>
+                    <li><a href="#">macOS 版本</a></li>
+                    <li><a href="#">Linux 版本</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h5>帮助支持</h5>
+                <ul>
+                    <li><a href="#">使用教程</a></li>
+                    <li><a href="#">版本更新日志</a></li>
+                    <li><a href="#">联系客服</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h5>法律声明</h5>
+                <ul>
+                    <li><a href="#">隐私政策</a></li>
+                    <li><a href="#">服务条款</a></li>
+                    <li><a href="#">免责声明</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2023 Dnfx工具箱. All Rights Reserved. 仅供技术交流与学习使用。</p>
+        </div>
+    </div>
+</footer>
+
+<script>
+    // FAQ Toggle Logic
+    const faqItems = document.querySelectorAll('.faq-item');
+
+    faqItems.forEach(item => {
+        const question = item.querySelector('.faq-question');
+        question.addEventListener('click', () => {
+            // Close all other items
+            faqItems.forEach(otherItem => {
+                if (otherItem !== item) {
+                    otherItem.classList.remove('active');
+                }
+            });
+            // Toggle current item
+            item.classList.toggle('active');
+        });
+    });
+
+    // Download Simulation
+    function startDownload() {
+        const btn = document.querySelector('.btn-primary');
+        const originalText = btn.innerText;
+        
+        btn.innerText = "正在准备下载...";
+        btn.style.backgroundColor = "#10b981"; // Green
+        
+        setTimeout(() => {
+            btn.innerText = "下载已开始";
+            btn.style.backgroundColor = "#059669";
+            
+            // Simulate download link trigger
+            const link = document.createElement('a');
+            link.href = "data:text/plain;charset=utf-8,This is a placeholder link for the Dnfx Key Macro download.";
+            link.download = "DnfxKeyMacro_v2.4.0_Setup.exe";
+            link.click();
+
+            setTimeout(() => {
+                btn.innerText = originalText;
+                btn.style.backgroundColor = ""; // Reset
+            }, 2000);
+        }, 1000);
+    }
+
+    function openGuide() {
+        document.getElementById('tutorial').scrollIntoView({ behavior: 'smooth' });
+    }
+</script>
+
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</body>
+  </html>
