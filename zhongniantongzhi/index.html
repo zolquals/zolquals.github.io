@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="中年同志社区，提供成熟稳重的社交平台、健康生活指南及情感支持。关注中年群体的情感需求与生活品质，营造尊重、温暖的交流环境。">
+    <meta name="keywords" content="中年同志,成熟男性交友,同志情感,中年男同,成熟社区">
+    <title>中年同志-成熟稳重的情感社交与生活指南</title>
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #34495e;
+            --accent-color: #c0392b;
+            --bg-color: #f8f9fa;
+            --card-bg: #ffffff;
+            --text-main: #333333;
+            --text-light: #7f8c8d;
+            --border-radius: 8px;
+            --shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+            --transition: all 0.3s ease;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: "PingFang SC", "Microsoft YaHei", -apple-system, BlinkMacSystemFont, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        /* Layout */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        header {
+            background-color: var(--card-bg);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .nav-wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 70px;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: var(--primary-color);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo span {
+            color: var(--accent-color);
+        }
+
+        nav ul {
+            display: flex;
+            gap: 30px;
+        }
+
+        nav a {
+            font-size: 1rem;
+            color: var(--text-main);
+            font-weight: 500;
+            transition: var(--transition);
+        }
+
+        nav a:hover, nav a.active {
+            color: var(--accent-color);
+        }
+
+        .header-actions {
+            display: flex;
+            gap: 15px;
+        }
+
+        .btn {
+            padding: 8px 20px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            cursor: pointer;
+            transition: var(--transition);
+            border: none;
+        }
+
+        .btn-outline {
+            background: transparent;
+            border: 1px solid var(--primary-color);
+            color: var(--primary-color);
+        }
+
+        .btn-outline:hover {
+            background: var(--primary-color);
+            color: white;
+        }
+
+        .btn-primary {
+            background: var(--accent-color);
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background: #a93226;
+            transform: translateY(-2px);
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+            color: white;
+            padding: 80px 0;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+
+        .hero p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+            max-width: 600px;
+            margin: 0 auto 40px;
+        }
+
+        .hero-stats {
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+            margin-top: 40px;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            padding-top: 30px;
+        }
+
+        .stat-item h3 {
+            font-size: 2rem;
+            color: var(--accent-color);
+        }
+
+        .stat-item p {
+            font-size: 0.9rem;
+            margin: 0;
+            opacity: 0.8;
+        }
+
+        /* Features Section */
+        .features {
+            padding: 60px 0;
+            background-color: white;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .section-title h2 {
+            font-size: 2rem;
+            color: var(--primary-color);
+            margin-bottom: 10px;
+        }
+
+        .section-title p {
+            color: var(--text-light);
+        }
+
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .feature-card {
+            background: var(--bg-color);
+            padding: 30px;
+            border-radius: var(--border-radius);
+            transition: var(--transition);
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow);
+        }
+
+        .feature-icon {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: var(--accent-color);
+        }
+
+        .feature-card h3 {
+            margin-bottom: 15px;
+            font-size: 1.25rem;
+        }
+
+        .feature-card p {
+            color: var(--text-light);
+            font-size: 0.95rem;
+        }
+
+        /* Guide Section */
+        .guide-section {
+            padding: 60px 0;
+        }
+
+        .guide-container {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 40px;
+        }
+
+        .guide-content h3 {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+            border-left: 4px solid var(--accent-color);
+            padding-left: 15px;
+        }
+
+        .guide-list {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .guide-item {
+            background: white;
+            padding: 20px;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow);
+            display: flex;
+            gap: 20px;
+        }
+
+        .guide-number {
+            background: var(--primary-color);
+            color: white;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            flex-shrink: 0;
+        }
+
+        .guide-text h4 {
+            margin-bottom: 8px;
+            font-size: 1.1rem;
+        }
+
+        .guide-text p {
+            font-size: 0.9rem;
+            color: var(--text-light);
+        }
+
+        .guide-sidebar {
+            background: white;
+            padding: 30px;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow);
+            height: fit-content;
+        }
+
+        .guide-sidebar h4 {
+            margin-bottom: 20px;
+            color: var(--primary-color);
+        }
+
+        .sidebar-list li {
+            margin-bottom: 15px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 10px;
+        }
+
+        .sidebar-list a {
+            font-size: 0.95rem;
+            color: var(--text-main);
+            display: block;
+        }
+
+        .sidebar-list a:hover {
+            color: var(--accent-color);
+        }
+
+        /* Community Section */
+        .community {
+            padding: 60px 0;
+            background: white;
+        }
+
+        .post-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 25px;
+        }
+
+        .post-card {
+            border: 1px solid #eee;
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            transition: var(--transition);
+        }
+
+        .post-card:hover {
+            box-shadow: var(--shadow);
+            border-color: transparent;
+        }
+
+        .post-img {
+            width: 100%;
+            height: 180px;
+            background-color: #e0e0e0;
+            object-fit: cover;
+        }
+
+        .post-body {
+            padding: 20px;
+        }
+
+        .post-tag {
+            font-size: 0.75rem;
+            color: var(--accent-color);
+            background: rgba(192, 57, 43, 0.1);
+            padding: 2px 8px;
+            border-radius: 4px;
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+
+        .post-title {
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+
+        .post-meta {
+            font-size: 0.85rem;
+            color: var(--text-light);
+            display: flex;
+            justify-content: space-between;
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 60px 0 20px;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .footer-col h4 {
+            font-size: 1.1rem;
+            margin-bottom: 20px;
+            color: white;
+        }
+
+        .footer-col ul li {
+            margin-bottom: 10px;
+        }
+
+        .footer-col ul li a {
+            color: rgba(255,255,255,0.7);
+            font-size: 0.9rem;
+        }
+
+        .footer-col ul li a:hover {
+            color: white;
+        }
+
+        .copyright {
+            text-align: center;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            padding-top: 20px;
+            font-size: 0.85rem;
+            color: rgba(255,255,255,0.5);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .nav-wrapper {
+                flex-direction: column;
+                height: auto;
+                padding: 15px 0;
+            }
+            
+            nav ul {
+                margin: 15px 0;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+
+            .guide-container {
+                grid-template-columns: 1fr;
+            }
+
+            .hero-stats {
+                flex-direction: column;
+                gap: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container nav-wrapper">
+            <div class="logo">
+                <span>成熟</span>伙伴
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#" class="active">首页</a></li>
+                    <li><a href="#guide">交友指南</a></li>
+                    <li><a href="#community">社区动态</a></li>
+                    <li><a href="#topics">热门话题</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <button class="btn btn-outline">登录</button>
+                <button class="btn btn-primary">注册</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <h1>构建成熟、真诚的社交空间</h1>
+                <p>专为中年男性群体打造的互助与交友平台。在这里，我们尊重每一份成熟与稳重，分享生活感悟，寻找志同道合的伙伴。</p>
+                <div style="margin-bottom: 30px;">
+                    <input type="text" placeholder="搜索感兴趣的话题或用户..." style="padding: 12px 20px; border-radius: 30px; border: none; width: 300px; outline: none;">
+                    <button class="btn btn-primary" style="border-radius: 30px; padding: 12px 30px; margin-left: 10px;">搜索</button>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <h3>10w+</h3>
+                        <p>注册成熟会员</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>5w+</h3>
+                        <p>今日在线互动</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>98%</h3>
+                        <p>实名认证率</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="features">
+            <div class="container">
+                <div class="section-title">
+                    <h2>为什么选择我们</h2>
+                    <p>理解中年群体的独特需求，提供更精准、更安全的社交服务</p>
+                </div>
+                <div class="feature-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">✓</div>
+                        <h3>实名认证机制</h3>
+                        <p>严格的身份审核流程，确保每一位会员的真实性与可靠性，营造纯净的交流环境。</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">♥</div>
+                        <h3>精准兴趣匹配</h3>
+                        <p>基于年龄、职业、兴趣爱好的深度分析，帮助您找到生活方式契合的成熟伴侣。</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🛡️</div>
+                        <h3>隐私保护安全</h3>
+                        <p>提供私密相册、阅后即焚消息等功能，全方位保护您的个人隐私与信息安全。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Guide Section -->
+        <section id="guide" class="guide-section">
+            <div class="container">
+                <div class="section-title">
+                    <h2>交友指南与建议</h2>
+                    <p>在建立联系的过程中，真诚与尊重是连接彼此的桥梁</p>
+                </div>
+                <div class="guide-container">
+                    <div class="guide-content">
+                        <h3>如何开启一段健康的社交关系</h3>
+                        <div class="guide-list">
+                            <div class="guide-item">
+                                <div class="guide-number">1</div>
+                                <div class="guide-text">
+                                    <h4>完善个人资料</h4>
+                                    <p>在个人主页中如实填写年龄、职业及兴趣爱好。真实的自我展示更容易获得他人的信任与共鸣。</p>
+                                </div>
+                            </div>
+                            <div class="guide-item">
+                                <div class="guide-number">2</div>
+                                <div class="guide-text">
+                                    <h4>主动分享生活</h4>
+                                    <p>中年社交更注重精神层面的交流。分享您的旅行经历、工作心得或生活感悟，能拉近彼此的距离。</p>
+                                </div>
+                            </div>
+                            <div class="guide-item">
+                                <div class="guide-number">3</div>
+                                <div class="guide-text">
+                                    <h4>保持耐心与尊重</h4>
+                                    <p>每个人的节奏不同，不要急于求成。在交流中保持礼貌与尊重，是建立长期关系的基础。</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <aside class="guide-sidebar">
+                        <h4>热门话题分类</h4>
+                        <ul class="sidebar-list">
+                            <li><a href="#">职场与生活平衡</a></li>
+                            <li><a href="#">成熟情感心理学</a></li>
+                            <li><a href="#">健康养生交流</a></li>
+                            <li><a href="#">兴趣爱好分享</a></li>
+                            <li><a href="#">同城线下活动</a></li>
+                        </ul>
+                    </aside>
+                </div>
+            </div>
+        </section>
+
+        <!-- Community Section -->
+        <section id="community" class="community">
+            <div class="container">
+                <div class="section-title">
+                    <h2>社区热门动态</h2>
+                    <p>看看大家都在关注什么，分享您的观点</p>
+                </div>
+                <div class="post-grid">
+                    <article class="post-card">
+                        <img src="https://picsum.photos/seed/gay1/400/300" alt="社区动态" class="post-img">
+                        <div class="post-body">
+                            <span class="post-tag">生活感悟</span>
+                            <h3 class="post-title">人到中年，如何保持对生活的热爱？</h3>
+                            <div class="post-meta">
+                                <span>作者：老张</span>
+                                <span>2小时前</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="post-card">
+                        <img src="https://picsum.photos/seed/gay2/400/300" alt="社区动态" class="post-img">
+                        <div class="post-body">
+                            <span class="post-tag">健身</span>
+                            <h3 class="post-title">40岁开始健身，身材管理的重要性</h3>
+                            <div class="post-meta">
+                                <span>作者：阿杰</span>
+                                <span>5小时前</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="post-card">
+                        <img src="https://picsum.photos/seed/gay3/400/300" alt="社区动态" class="post-img">
+                        <div class="post-body">
+                            <span class="post-tag">情感</span>
+                            <h3 class="post-title">谈谈中年同志在情感中的坦诚与包容</h3>
+                            <div class="post-meta">
+                                <span>作者：L先生</span>
+                                <span>昨天</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="post-card">
+                        <img src="https://picsum.photos/seed/gay4/400/300" alt="社区动态" class="post-img">
+                        <div class="post-body">
+                            <span class="post-tag">旅行</span>
+                            <h3 class="post-title">周末自驾游：寻找城市周边的宁静</h3>
+                            <div class="post-meta">
+                                <span>作者：旅行者</span>
+                                <span>昨天</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Topics Section -->
+        <section id="topics" class="guide-section" style="background-color: #f1f3f5;">
+            <div class="container">
+                <div class="section-title">
+                    <h2>常见问题 (FAQ)</h2>
+                    <p>关于注册、隐私及使用规范的解答</p>
+                </div>
+                <div style="max-width: 800px; margin: 0 auto;">
+                    <details style="background: white; margin-bottom: 15px; border-radius: 8px; overflow: hidden;">
+                        <summary style="padding: 20px; cursor: pointer; font-weight: 600; list-style: none; display: flex; justify-content: space-between; align-items: center;">
+                            如何保证会员的真实性？
+                            <span style="font-size: 1.2rem;">+</span>
+                        </summary>
+                        <div style="padding: 0 20px 20px; color: var(--text-light); border-top: 1px solid #eee; margin-top: 10px; padding-top: 15px;">
+                            我们要求用户上传身份证件进行实名认证，并定期进行系统审核，确保平台上的每一位用户都是真实存在的成年人。
+                        </div>
+                    </details>
+                    <details style="background: white; margin-bottom: 15px; border-radius: 8px; overflow: hidden;">
+                        <summary style="padding: 20px; cursor: pointer; font-weight: 600; list-style: none; display: flex; justify-content: space-between; align-items: center;">
+                            注册需要提供哪些信息？
+                            <span style="font-size: 1.2rem;">+</span>
+                        </summary>
+                        <div style="padding: 0 20px 20px; color: var(--text-light); border-top: 1px solid #eee; margin-top: 10px; padding-top: 15px;">
+                            您需要提供有效的手机号码、邮箱地址以及真实的身份信息。这些信息仅用于安全验证，我们承诺严格保密。
+                        </div>
+                    </details>
+                    <details style="background: white; margin-bottom: 15px; border-radius: 8px; overflow: hidden;">
+                        <summary style="padding: 20px; cursor: pointer; font-weight: 600; list-style: none; display: flex; justify-content: space-between; align-items: center;">
+                            如何保护我的隐私安全？
+                            <span style="font-size: 1.2rem;">+</span>
+                        </summary>
+                        <div style="padding: 0 20px 20px; color: var(--text-light); border-top: 1px solid #eee; margin-top: 10px; padding-top: 15px;">
+                            您可以开启“隐私保护模式”，隐藏真实头像、位置及联系方式。我们提供阅后即焚消息功能，防止敏感信息泄露。
+                        </div>
+                    </details>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>关于我们</h4>
+                    <ul>
+                        <li><a href="#">平台介绍</a></li>
+                        <li><a href="#">服务条款</a></li>
+                        <li><a href="#">隐私政策</a></li>
+                        <li><a href="#">安全中心</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>帮助中心</h4>
+                    <ul>
+                        <li><a href="#">新手指南</a></li>
+                        <li><a href="#">账号安全</a></li>
+                        <li><a href="#">联系客服</a></li>
+                        <li><a href="#">意见反馈</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>关注我们</h4>
+                    <ul>
+                        <li><a href="#">微信公众号</a></li>
+                        <li><a href="#">新浪微博</a></li>
+                        <li><a href="#">官方QQ群</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>联系我们</h4>
+                    <ul>
+                        <li>邮箱：support@mature-partner.com</li>
+                        <li>电话：400-123-4567</li>
+                        <li>地址：北京市朝阳区科技园路88号</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                &copy; 2023 成熟伙伴平台 版权所有. 本站仅提供社交服务，请遵守法律法规。
+            </div>
+        </div>
+    </footer>
+
+    <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</body>
+  </html>
