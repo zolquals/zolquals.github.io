@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="梦幻西游守军积分攻略、守军积分获取方式、守军积分兑换奖励及积分结算规则详解。提供高效的守军积分刷分技巧与活动时间表。">
+    <meta name="keywords" content="梦幻西游, 梦幻西游守军积分, 守军积分兑换, 梦幻西游活动, 守军积分攻略">
+    <title>梦幻西游守军积分-守军积分获取攻略与兑换奖励指南</title>
+    <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+    <style>
+        :root {
+            --primary-color: #3e5c76; /* 梦幻蓝 */
+            --secondary-color: #8f6b3e; /* 香橙金 */
+            --accent-color: #e6b800; /* 金币黄 */
+            --bg-color: #f4f4f4;
+            --card-bg: #ffffff;
+            --text-main: #333333;
+            --text-light: #666666;
+            --border-radius: 8px;
+            --spacing-unit: 16px;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: "Microsoft YaHei", "PingFang SC", sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: color 0.3s;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        /* 布局容器 */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 var(--spacing-unit);
+        }
+
+        /* 头部导航 */
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 15px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .nav-wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo span {
+            color: var(--accent-color);
+        }
+
+        nav ul {
+            display: flex;
+            gap: 20px;
+        }
+
+        nav a {
+            font-size: 0.95rem;
+            opacity: 0.9;
+        }
+
+        nav a:hover, nav a.active {
+            opacity: 1;
+            color: var(--accent-color);
+        }
+
+        /* Hero 区域 */
+        .hero {
+            background: linear-gradient(135deg, var(--primary-color) 0%, #2a3f55 100%);
+            color: white;
+            padding: 60px 0;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* 通用 Section */
+        section {
+            margin-bottom: 50px;
+        }
+
+        .section-title {
+            font-size: 1.8rem;
+            color: var(--primary-color);
+            margin-bottom: 25px;
+            padding-left: 15px;
+            border-left: 5px solid var(--secondary-color);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .section-title span {
+            font-size: 1rem;
+            color: var(--text-light);
+            font-weight: normal;
+        }
+
+        /* 核心概念卡片 */
+        .grid-3 {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: var(--card-bg);
+            border-radius: var(--border-radius);
+            padding: 25px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px rgba(0,0,0,0.1);
+        }
+
+        .card-icon {
+            font-size: 2rem;
+            margin-bottom: 15px;
+            color: var(--secondary-color);
+        }
+
+        .card h3 {
+            margin-bottom: 10px;
+            font-size: 1.25rem;
+        }
+
+        .card p {
+            color: var(--text-light);
+            font-size: 0.95rem;
+        }
+
+        /* 积分获取方式 */
+        .step-list {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .step-item {
+            background: var(--card-bg);
+            padding: 20px;
+            border-radius: var(--border-radius);
+            border-left: 4px solid var(--accent-color);
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .step-number {
+            background: var(--secondary-color);
+            color: white;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            flex-shrink: 0;
+        }
+
+        .step-content h4 {
+            margin-bottom: 5px;
+            color: var(--primary-color);
+        }
+
+        .step-content p {
+            font-size: 0.9rem;
+            color: var(--text-light);
+        }
+
+        /* 兑换奖励表格 */
+        .reward-table-wrapper {
+            overflow-x: auto;
+        }
+
+        .reward-table {
+            width: 100%;
+            border-collapse: collapse;
+            background: var(--card-bg);
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+
+        .reward-table th, .reward-table td {
+            padding: 15px;
+            text-align: left;
+            border-bottom: 1px solid #eee;
+        }
+
+        .reward-table th {
+            background-color: var(--primary-color);
+            color: white;
+            font-weight: normal;
+        }
+
+        .reward-table tr:last-child td {
+            border-bottom: none;
+        }
+
+        .reward-table tr:hover {
+            background-color: #f9f9f9;
+        }
+
+        .price-tag {
+            display: inline-block;
+            background: rgba(230, 184, 0, 0.2);
+            color: #b8860b;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-weight: bold;
+            font-size: 0.9rem;
+        }
+
+        /* 常见问题 FAQ */
+        .faq-item {
+            background: var(--card-bg);
+            margin-bottom: 10px;
+            border-radius: var(--border-radius);
+            overflow: hidden;
+        }
+
+        .faq-question {
+            padding: 20px;
+            cursor: pointer;
+            font-weight: bold;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #fff;
+        }
+
+        .faq-question::after {
+            content: '+';
+            font-size: 1.5rem;
+            color: var(--primary-color);
+        }
+
+        .faq-item.active .faq-question::after {
+            content: '-';
+        }
+
+        .faq-answer {
+            padding: 0 20px;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out, padding 0.3s ease;
+            background: #fafafa;
+            color: var(--text-light);
+        }
+
+        .faq-item.active .faq-answer {
+            padding: 0 20px 20px 20px;
+            max-height: 200px; /* 足够展示内容的高度 */
+        }
+
+        /* 页脚 */
+        footer {
+            background-color: #2a3f55;
+            color: #ccc;
+            padding: 40px 0 20px;
+            margin-top: 60px;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 30px;
+            margin-bottom: 30px;
+        }
+
+        .footer-col h4 {
+            color: white;
+            margin-bottom: 15px;
+            font-size: 1.1rem;
+        }
+
+        .footer-col ul li {
+            margin-bottom: 8px;
+        }
+
+        .footer-col ul li a:hover {
+            color: var(--accent-color);
+        }
+
+        .copyright {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            font-size: 0.85rem;
+        }
+
+        /* 响应式调整 */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+            
+            .nav-wrapper {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            .step-item {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .step-number {
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container nav-wrapper">
+            <div class="logo">梦幻<span>攻略</span></div>
+            <nav>
+                <ul>
+                    <li><a href="#" class="active">积分攻略</a></li>
+                    <li><a href="#">活动日历</a></li>
+                    <li><a href="#">新手指南</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="hero">
+        <div class="container">
+            <h1>梦幻西游守军积分</h1>
+            <p>全面解析守军积分获取途径、兑换奖励及结算规则，助你高效积累积分，获取稀有物品。</p>
+        </div>
+    </div>
+
+    <main class="container">
+
+        <!-- 概念介绍 -->
+        <section>
+            <div class="section-title">
+                什么是守军积分？
+                <span>Core Concepts</span>
+            </div>
+            <div class="grid-3">
+                <article class="card">
+                    <div class="card-icon">⚔️</div>
+                    <h3>守军身份</h3>
+                    <p>守军积分是《梦幻西游》门派竞技中“守方”玩家在战斗中通过击败进攻方获得的积分。这是守军专属的战功证明。</p>
+                </article>
+                <article class="card">
+                    <div class="card-icon">🏆</div>
+                    <h3>积分作用</h3>
+                    <p>守军积分可用于在竞技场商店兑换强力装备、珍稀召唤兽技能书、高级魔兽要诀等高价值道具。</p>
+                </article>
+                <article class="card">
+                    <div class="card-icon">📅</div>
+                    <h3>结算周期</h3>
+                    <p>积分通常按赛季或周期结算，赛季结束后根据守军积分排名发放额外奖励，未使用的积分通常会清零。</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- 获取方式 -->
+        <section>
+            <div class="section-title">
+                守军积分获取方式
+                <span>How to Get Points</span>
+            </div>
+            <div class="step-list">
+                <div class="step-item">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h4>参与门派竞技（守方）</h4>
+                        <p>守军积分的唯一来源是参与门派竞技。作为守方进入战场，每击杀一名进攻方玩家即可获得基础积分奖励。</p>
+                    </div>
+                </div>
+                <div class="step-item">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h4>击败高等级对手</h4>
+                        <p>击杀对手的等级越高，获得的守军积分越多。例如，击败一名69级玩家可能获得10分，而击败一名175级玩家可能获得50分。</p>
+                    </div>
+                </div>
+                <div class="step-item">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h4>战斗胜利加成</h4>
+                        <p>如果你的门派在当前竞技场环境中占据优势，或者守方整体战况激烈，系统可能会根据战斗结果给予额外的积分加成。</p>
+                    </div>
+                </div>
+                <div class="step-item">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h4>完成每日任务</h4>
+                        <p>每日登录并完成指定数量的门派竞技挑战，有时会额外赠送少量的守军积分作为活跃度奖励。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 兑换奖励 -->
+        <section>
+            <div class="section-title">
+                积分兑换奖励一览
+                <span>Exchange Rewards</span>
+            </div>
+            <div class="reward-table-wrapper">
+                <table class="reward-table">
+                    <thead>
+                        <tr>
+                            <th>奖励名称</th>
+                            <th>所需积分</th>
+                            <th>备注</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>高级魔兽要诀（高魔心）</td>
+                            <td>5,000</td>
+                            <td>稀有技能书，概率开出</td>
+                        </tr>
+                        <tr>
+                            <td>高级符石组合卷轴</td>
+                            <td>3,000</td>
+                            <td>随机开出一种高级符石组合</td>
+                        </tr>
+                        <tr>
+                            <td>百炼精铁 x 20</td>
+                            <td>2,000</td>
+                            <td>打造装备必备材料</td>
+                        </tr>
+                        <tr>
+                            <td>超级金柳露 x 10</td>
+                            <td>1,500</td>
+                            <td>洗炼召唤兽</td>
+                        </tr>
+                        <tr>
+                            <td>门派贡献点 x 500</td>
+                            <td>1,000</td>
+                            <td>可在门派内兑换其他物品</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- 常见问题 -->
+        <section>
+            <div class="section-title">
+                常见问题 (FAQ)
+                <span>FAQ</span>
+            </div>
+            <div class="faq-list">
+                <div class="faq-item active">
+                    <div class="faq-question">守军积分可以交易吗？</div>
+                    <div class="faq-answer">
+                        <p>不可以。守军积分是绑定在个人账号上的，仅能用于兑换个人背包内的物品，无法通过交易行或其他方式转移给其他玩家。</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">如果守方输了，有积分吗？</div>
+                    <div class="faq-answer">
+                        <p>会有少量积分。虽然守方输了，但只要参与了战斗并存活下来，依然会根据战斗时间或击杀数获得基础积分，只是比胜利获得的积分要少得多。</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">积分结算后未使用的怎么办？</div>
+                    <div class="faq-answer">
+                        <p>通常情况下，赛季结算后，未使用的守军积分会清零。建议在赛季结束前，优先兑换急需的高级物品，避免资源浪费。</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">如何快速提升守军积分排名？</div>
+                    <div class="faq-answer">
+                        <p>提升排名主要靠“击杀数”和“对手等级”。建议组队配合，利用强力封系和物理系输出，集中火力击杀对方高等级玩家，是获取高分最快的方法。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <h4>关于攻略</h4>
+                    <ul>
+                        <li><a href="#">游戏介绍</a></li>
+                        <li><a href="#">门派技能</a></li>
+                        <li><a href="#">装备打造</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>活动专区</h4>
+                    <ul>
+                        <li><a href="#">门派竞技</a></li>
+                        <li><a href="#">帮派任务</a></li>
+                        <li><a href="#">节日活动</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>玩家社区</h4>
+                    <ul>
+                        <li><a href="#">官方论坛</a></li>
+                        <li><a href="#">玩家交流群</a></li>
+                        <li><a href="#">新手求助</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                &copy; 2023 梦幻西游攻略网. 本页面内容仅供参考，游戏版权归属网易公司.
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // 简单的 FAQ 折叠交互逻辑
+        document.addEventListener('DOMContentLoaded', function() {
+            const faqItems = document.querySelectorAll('.faq-item');
+
+            faqItems.forEach(item => {
+                const question = item.querySelector('.faq-question');
+                question.addEventListener('click', () => {
+                    // 关闭其他已打开的项
+                    faqItems.forEach(otherItem => {
+                        if (otherItem !== item) {
+                            otherItem.classList.remove('active');
+                        }
+                    });
+                    // 切换当前项
+                    item.classList.toggle('active');
+                });
+            });
+        });
+    </script>
+</body>
+</html>
