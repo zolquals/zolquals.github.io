@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>八卦阵 - 历史阵法解析与实战推演指南</title>
+    <meta name="description" content="八卦阵详解：探究中国古代军事智慧与建筑布局。包含八门阵法图解、奇门遁甲原理、现代仿古设计案例及实战布局指南。">
+    <meta name="keywords" content="八卦阵, 八门阵法, 奇门遁甲, 古代阵法, 军事谋略, 园林布局, 易经">
+    <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+    <style>
+        :root {
+            --bg-color: #f8f6f3;
+            --text-main: #2c2c2c;
+            --text-secondary: #5a5a5a;
+            --accent-color: #8c3b3b;
+            --accent-hover: #6e2e2e;
+            --card-bg: #ffffff;
+            --border-radius: 8px;
+            --spacing-unit: 20px;
+            --container-width: 1200px;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: "PingFang SC", "Microsoft YaHei", "Helvetica Neue", Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: color 0.3s ease;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        /* 布局容器 */
+        .container {
+            max-width: var(--container-width);
+            margin: 0 auto;
+            padding: 0 var(--spacing-unit);
+        }
+
+        /* 头部导航 */
+        header {
+            background-color: var(--card-bg);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .nav-wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 70px;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: var(--accent-color);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo span {
+            font-size: 1.8rem;
+        }
+
+        nav ul {
+            display: flex;
+            gap: 30px;
+        }
+
+        nav a {
+            font-weight: 500;
+            font-size: 1rem;
+            position: relative;
+        }
+
+        nav a:hover, nav a.active {
+            color: var(--accent-color);
+        }
+
+        nav a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: var(--accent-color);
+            transition: width 0.3s;
+        }
+
+        nav a:hover::after {
+            width: 100%;
+        }
+
+        .cta-btn {
+            background-color: var(--accent-color);
+            color: #fff;
+            padding: 8px 20px;
+            border-radius: 4px;
+            font-size: 0.9rem;
+            transition: background 0.3s;
+        }
+
+        .cta-btn:hover {
+            background-color: var(--accent-hover);
+            color: #fff;
+        }
+
+        /* Hero 区域 */
+        .hero {
+            position: relative;
+            height: 500px;
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://picsum.photos/seed/formation/1920/800') no-repeat center center/cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: #fff;
+        }
+
+        .hero-content {
+            max-width: 800px;
+            padding: 20px;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            opacity: 0.9;
+        }
+
+        /* 介绍区域 */
+        .section {
+            padding: 80px 0;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .section-header h2 {
+            font-size: 2rem;
+            margin-bottom: 15px;
+            color: var(--text-main);
+        }
+
+        .section-header p {
+            color: var(--text-secondary);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* 核心概念卡片 */
+        .concept-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .card {
+            background: var(--card-bg);
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+        }
+
+        .card-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .card-body {
+            padding: 25px;
+        }
+
+        .card-title {
+            font-size: 1.25rem;
+            margin-bottom: 10px;
+            color: var(--text-main);
+        }
+
+        .card-text {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+            margin-bottom: 20px;
+        }
+
+        .card-link {
+            color: var(--accent-color);
+            font-weight: 600;
+            font-size: 0.9rem;
+            display: inline-flex;
+            align-items: center;
+        }
+
+        .card-link:hover {
+            text-decoration: underline;
+        }
+
+        /* 八门详解 */
+        .ba-gua-wrapper {
+            background-color: #fff;
+            border-radius: var(--border-radius);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            padding: 40px;
+        }
+
+        .ba-gua-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            text-align: center;
+        }
+
+        .ba-gua-item {
+            padding: 20px;
+            border: 1px solid #eee;
+            border-radius: 6px;
+            transition: all 0.3s;
+        }
+
+        .ba-gua-item:hover {
+            border-color: var(--accent-color);
+            background-color: #fff5f5;
+        }
+
+        .ba-gua-icon {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            display: block;
+        }
+
+        .ba-gua-name {
+            font-weight: bold;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .ba-gua-desc {
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+        }
+
+        /* 实战指南 */
+        .guide-list {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .guide-item {
+            display: flex;
+            background: var(--card-bg);
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+
+        .guide-number {
+            background-color: var(--accent-color);
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            font-weight: bold;
+            min-width: 80px;
+            padding: 0 15px;
+        }
+
+        .guide-content {
+            padding: 25px;
+            flex: 1;
+        }
+
+        .guide-content h3 {
+            margin-bottom: 10px;
+            font-size: 1.2rem;
+        }
+
+        .guide-content p {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+        }
+
+        /* FAQ */
+        .faq-section {
+            background-color: #fff;
+        }
+
+        .faq-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+            gap: 30px;
+        }
+
+        .faq-item {
+            border-bottom: 1px solid #eee;
+            padding-bottom: 20px;
+        }
+
+        .faq-item h3 {
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+            color: var(--text-main);
+        }
+
+        .faq-item p {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+        }
+
+        /* 页脚 */
+        footer {
+            background-color: #2c2c2c;
+            color: #ccc;
+            padding: 60px 0 20px;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .footer-col h4 {
+            color: #fff;
+            margin-bottom: 20px;
+            font-size: 1.1rem;
+        }
+
+        .footer-col ul li {
+            margin-bottom: 10px;
+        }
+
+        .footer-col ul li a:hover {
+            color: #fff;
+        }
+
+        .copyright {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid #444;
+            font-size: 0.9rem;
+        }
+
+        /* 响应式调整 */
+        @media (max-width: 768px) {
+            .nav-wrapper {
+                flex-direction: column;
+                height: auto;
+                padding: 15px 0;
+            }
+
+            nav ul {
+                margin: 15px 0;
+                gap: 15px;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .ba-gua-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .guide-item {
+                flex-direction: column;
+            }
+
+            .guide-number {
+                width: 100%;
+                padding: 10px;
+                font-size: 1.5rem;
+            }
+
+            .faq-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container nav-wrapper">
+            <div class="logo">
+                <span>☯</span> 八卦阵
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#concept" class="active">阵法原理</a></li>
+                    <li><a href="#eight-gates">八门详解</a></li>
+                    <li><a href="#applications">实战应用</a></li>
+                    <li><a href="#faq">常见问题</a></li>
+                </ul>
+            </nav>
+            <a href="#applications" class="cta-btn">探索布局指南</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content">
+                <h1>八卦阵</h1>
+                <p>中国古代军事智慧的巅峰体现，融合易经哲学与战术布局的攻防艺术。</p>
+                <a href="#concept" class="cta-btn" style="background: white; color: var(--accent-color);">了解历史</a>
+            </div>
+        </section>
+
+        <!-- 核心概念 -->
+        <section id="concept" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>什么是八卦阵？</h2>
+                    <p>八卦阵，又称八门金锁阵，是中国古代军事阵法之一，源于《易经》八卦原理，由诸葛亮在《三国演义》中发扬光大。它并非单一形状，而是一套灵活多变的战术体系。</p>
+                </div>
+
+                <div class="concept-grid">
+                    <article class="card">
+                        <img src="https://picsum.photos/seed/general/400/250" alt="古代将军" class="card-image">
+                        <div class="card-body">
+                            <h3 class="card-title">军事防御体系</h3>
+                            <p class="card-text">八卦阵以“生、伤、杜、景、死、惊、开、休”八门为基础，通过不同兵力的配置，形成进可攻、退可守的立体防御网络。</p>
+                            <a href="#" class="card-link">查看战术图解 &rarr;</a>
+                        </div>
+                    </article>
+
+                    <article class="card">
+                        <img src="https://picsum.photos/seed/tomb/400/250" alt="古墓" class="card-image">
+                        <div class="card-body">
+                            <h3 class="card-title">建筑与风水布局</h3>
+                            <p class="card-text">在现代，八卦阵常用于园林、古建筑及墓穴的设计。通过回廊曲折、门路交错，制造出迷幻的视觉效果，起到藏风聚气的作用。</p>
+                            <a href="#" class="card-link">阅读布局指南 &rarr;</a>
+                        </div>
+                    </article>
+
+                    <article class="card">
+                        <img src="https://picsum.photos/seed/taichi/400/250" alt="太极图" class="card-image">
+                        <div class="card-body">
+                            <h3 class="card-title">易经哲学基础</h3>
+                            <p class="card-text">阵法的核心在于阴阳平衡与五行生克。通过方位的变换，模拟自然界的循环规律，使军队在战斗中保持生命力。</p>
+                            <a href="#" class="card-link">探索哲学内涵 &rarr;</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- 八门详解 -->
+        <section id="eight-gates" class="section" style="background-color: #fff;">
+            <div class="container">
+                <div class="section-header">
+                    <h2>八门布局详解</h2>
+                    <p>八卦阵的核心在于“八门”。在奇门遁甲中，开门、休门、生门为大吉之门，死门、惊门为大凶之门，其余为平门。</p>
+                </div>
+
+                <div class="ba-gua-wrapper">
+                    <div class="ba-gua-grid">
+                        <div class="ba-gua-item">
+                            <span class="ba-gua-icon">☰</span>
+                            <span class="ba-gua-name">乾门 (天)</span>
+                            <span class="ba-gua-desc">刚健有力，主进攻，利于正面突破。</span>
+                        </div>
+                        <div class="ba-gua-item">
+                            <span class="ba-gua-icon">☴</span>
+                            <span class="ba-gua-name">巽门 (风)</span>
+                            <span class="ba-gua-desc">柔顺灵活，主奇袭，利于侧翼包抄。</span>
+                        </div>
+                        <div class="ba-gua-item">
+                            <span class="ba-gua-icon">☵</span>
+                            <span class="ba-gua-name">坎门 (水)</span>
+                            <span class="ba-gua-desc">深藏不露，主潜伏，利于设伏。</span>
+                        </div>
+                        <div class="ba-gua-item">
+                            <span class="ba-gua-icon">☶</span>
+                            <span class="ba-gua-name">艮门 (山)</span>
+                            <span class="ba-gua-desc">稳固静止，主防守，利于据点坚守。</span>
+                        </div>
+                        <div class="ba-gua-item">
+                            <span class="ba-gua-icon">☳</span>
+                            <span class="ba-gua-name">震门 (雷)</span>
+                            <span class="ba-gua-desc">震动出击，主突击，利于突然发动攻击。</span>
+                        </div>
+                        <div class="ba-gua-item">
+                            <span class="ba-gua-icon">☴</span>
+                            <span class="ba-gua-name">巽门 (风)</span>
+                            <span class="ba-gua-desc">重复出现，主速战速决，利于快速机动。</span>
+                        </div>
+                        <div class="ba-gua-item">
+                            <span class="ba-gua-icon">☲</span>
+                            <span class="ba-gua-name">离门 (火)</span>
+                            <span class="ba-gua-desc">光明显赫，主进攻，利于正面强攻。</span>
+                        </div>
+                        <div class="ba-gua-item">
+                            <span class="ba-gua-icon">☷</span>
+                            <span class="ba-gua-name">坤门 (地)</span>
+                            <span class="ba-gua-desc">包容广大，主撤退，利于保存实力。</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 实战应用 -->
+        <section id="applications" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>现代布局与实战指南</h2>
+                    <p>如何将古老的阵法智慧应用于现代环境？从园林设计到心理战术。</p>
+                </div>
+
+                <div class="guide-list">
+                    <div class="guide-item">
+                        <div class="guide-number">01</div>
+                        <div class="guide-content">
+                            <h3>仿古园林设计</h3>
+                            <p>在现代中式园林中，设计师常利用八卦阵的原理设计回廊。通过设置“迷魂阵”，让游客在游览时产生方向迷失感，同时利用“生门”引导人流至主要景点，增加游览趣味性。</p>
+                        </div>
+                    </div>
+
+                    <div class="guide-item">
+                        <div class="guide-number">02</div>
+                        <div class="guide-content">
+                            <h3>室内布局与风水</h3>
+                            <p>在家居装修中，八卦阵的概念被简化为“曲径通幽”。通过玄关的曲折设计阻挡直冲的气流（煞气），并在室内设置“明堂”（开阔区域）以聚财气。核心在于“藏风聚气”。</p>
+                        </div>
+                    </div>
+
+                    <div class="guide-item">
+                        <div class="guide-number">03</div>
+                        <div class="guide-content">
+                            <h3>团队管理与沟通</h3>
+                            <p>将八卦阵的层级关系应用于企业管理，可以构建一个灵活的组织架构。核心层（中军）掌握决策权，外层（八门）负责具体执行与信息收集。通过灵活切换“门”的状态（如关闭部分门以减少沟通成本），提高组织效率。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ -->
+        <section id="faq" class="section faq-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>常见问题解答</h2>
+                </div>
+                <div class="faq-grid">
+                    <div class="faq-item">
+                        <h3>八卦阵和九宫格有什么区别？</h3>
+                        <p>八卦阵主要侧重于“门”的方位和动态变化，强调攻防转换；而九宫格通常指空间上的九宫格布局（如洛书），更多用于方位定位或棋类游戏，两者在哲学源头（易经）上相通，但应用形式不同。</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>八卦阵真的能困住敌人吗？</h3>
+                        <p>在古代战争中，八卦阵通过多层防线和灵活的兵力调度，确实能有效地迟滞敌军、分割包围。但在现代热兵器战争中，其防御价值已大幅降低，更多作为历史文化和战术演练存在。</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>普通人如何布置简易的“迷魂阵”？</h3>
+                        <p>在户外露营或小型聚会中，可以通过设置隐蔽的路径和干扰视觉的植物丛来模拟简单的阵法。关键在于控制观察者的视野范围，使其无法一次性看清全貌。</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>生门在哪里？</h3>
+                        <p>在传统的奇门遁甲排盘中，生门的位置是动态变化的，取决于当时的局数。在建筑布局中，通常将采光好、气流顺畅、出入方便的方位视为“生门”。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>八卦阵指南</h4>
+                    <p style="font-size: 0.9rem; line-height: 1.8;">致力于传承和解析中国传统阵法文化，为您提供从历史考据到现代应用的专业指南。</p>
+                </div>
+                <div class="footer-col">
+                    <h4>快速导航</h4>
+                    <ul>
+                        <li><a href="#concept">阵法原理</a></li>
+                        <li><a href="#eight-gates">八门详解</a></li>
+                        <li><a href="#applications">实战应用</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>相关资源</h4>
+                    <ul>
+                        <li><a href="#">奇门遁甲入门</a></li>
+                        <li><a href="#">古代军事史</a></li>
+                        <li><a href="#">中式园林设计</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                &copy; 2023 八卦阵文化研究. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
