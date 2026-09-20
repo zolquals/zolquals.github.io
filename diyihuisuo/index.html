@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>第一会所亚洲-顶级奢华会所服务与高端生活方式指南</title>
+    <meta name="description" content="第一会所亚洲为您提供尊贵私密的高端休闲空间，融合传统东方美学与现代奢华服务，涵盖商务洽谈、私人宴请及特色休闲项目，致力于打造极致的会员专属体验。">
+    <meta name="keywords" content="第一会所亚洲, 高端会所, 奢华休闲, 商务会所, 私人宴请, 东方美学, 尊贵服务">
+    <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+    <style>
+        :root {
+            --primary-color: #1a1a1a;
+            --accent-color: #c5a059;
+            --accent-hover: #b08d4b;
+            --bg-color: #f8f8f8;
+            --card-bg: #ffffff;
+            --text-main: #333333;
+            --text-secondary: #666666;
+            --border-color: #e0e0e0;
+            --font-serif: 'Songti SC', 'SimSun', serif;
+            --font-sans: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: var(--font-sans);
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: color 0.3s ease;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        /* Utility */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .section-title h2 {
+            font-family: var(--font-serif);
+            font-size: 2.5rem;
+            color: var(--primary-color);
+            margin-bottom: 10px;
+        }
+
+        .section-title p {
+            color: var(--text-secondary);
+            font-size: 1.1rem;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 30px;
+            background-color: var(--accent-color);
+            color: #fff;
+            border-radius: 2px;
+            font-size: 1rem;
+            letter-spacing: 1px;
+            cursor: pointer;
+            border: 1px solid var(--accent-color);
+            transition: all 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: transparent;
+            color: var(--accent-color);
+        }
+
+        .btn-outline {
+            background-color: transparent;
+            color: var(--primary-color);
+            border: 1px solid var(--primary-color);
+        }
+
+        .btn-outline:hover {
+            background-color: var(--primary-color);
+            color: #fff;
+        }
+
+        /* Header */
+        header {
+            background-color: rgba(255, 255, 255, 0.95);
+            border-bottom: 1px solid var(--border-color);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.03);
+        }
+
+        .header-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 80px;
+        }
+
+        .logo {
+            font-family: var(--font-serif);
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: var(--primary-color);
+            letter-spacing: 2px;
+        }
+
+        .logo span {
+            color: var(--accent-color);
+        }
+
+        nav ul {
+            display: flex;
+            gap: 30px;
+        }
+
+        nav a {
+            font-size: 1rem;
+            font-weight: 500;
+            color: var(--text-main);
+            position: relative;
+        }
+
+        nav a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: var(--accent-color);
+            transition: width 0.3s ease;
+        }
+
+        nav a:hover::after {
+            width: 100%;
+        }
+
+        .header-actions {
+            display: flex;
+            gap: 15px;
+            align-items: center;
+        }
+
+        /* Hero Section */
+        .hero {
+            position: relative;
+            height: 600px;
+            background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.5)), url('https://picsum.photos/seed/asia_luxury/1920/1080.jpg');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: #fff;
+        }
+
+        .hero-content {
+            max-width: 800px;
+            padding: 20px;
+            animation: fadeIn Up 1s ease-out;
+        }
+
+        .hero h1 {
+            font-family: var(--font-serif);
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+            letter-spacing: 3px;
+        }
+
+        .hero p {
+            font-size: 1.25rem;
+            margin-bottom: 40px;
+            opacity: 0.9;
+        }
+
+        /* Features Section */
+        .features {
+            padding: 80px 0;
+            background-color: #fff;
+        }
+
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+        }
+
+        .feature-card {
+            text-align: center;
+            padding: 40px 20px;
+            border: 1px solid #eee;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+            border-color: var(--accent-color);
+        }
+
+        .feature-icon {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: var(--accent-color);
+        }
+
+        .feature-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            font-family: var(--font-serif);
+        }
+
+        .feature-card p {
+            color: var(--text-secondary);
+        }
+
+        /* Spaces Section */
+        .spaces {
+            padding: 80px 0;
+            background-color: var(--bg-color);
+        }
+
+        .space-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .space-item {
+            position: relative;
+            height: 400px;
+            overflow: hidden;
+            border-radius: 4px;
+        }
+
+        .space-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .space-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+            padding: 30px 20px;
+            color: #fff;
+        }
+
+        .space-item:hover img {
+            transform: scale(1.1);
+        }
+
+        .space-overlay h3 {
+            font-family: var(--font-serif);
+            font-size: 1.5rem;
+            margin-bottom: 5px;
+        }
+
+        .space-overlay p {
+            font-size: 0.9rem;
+            opacity: 0.8;
+        }
+
+        /* Membership Section */
+        .membership {
+            padding: 80px 0;
+            background-color: #fff;
+        }
+
+        .membership-container {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 50px;
+        }
+
+        .membership-image {
+            flex: 1;
+            min-width: 300px;
+            height: 500px;
+            background-image: url('https://picsum.photos/seed/luxury_interior/800/1000.jpg');
+            background-size: cover;
+            background-position: center;
+            border-radius: 4px;
+        }
+
+        .membership-content {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .membership-content h2 {
+            font-family: var(--font-serif);
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        .membership-content p {
+            color: var(--text-secondary);
+            margin-bottom: 30px;
+            font-size: 1.1rem;
+        }
+
+        .benefit-list li {
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+        }
+
+        .benefit-list li::before {
+            content: '✓';
+            color: var(--accent-color);
+            font-weight: bold;
+            margin-right: 10px;
+            font-size: 1.2rem;
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--primary-color);
+            color: #fff;
+            padding: 60px 0 20px;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+            padding-bottom: 40px;
+        }
+
+        .footer-col h4 {
+            font-family: var(--font-serif);
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+            color: var(--accent-color);
+        }
+
+        .footer-col ul li {
+            margin-bottom: 10px;
+        }
+
+        .footer-col ul li a {
+            color: #aaa;
+            font-size: 0.95rem;
+        }
+
+        .footer-col ul li a:hover {
+            color: #fff;
+        }
+
+        .copyright {
+            text-align: center;
+            color: #666;
+            font-size: 0.85rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .header-inner {
+                flex-direction: column;
+                height: auto;
+                padding: 15px 0;
+            }
+
+            nav ul {
+                margin: 15px 0;
+                gap: 15px;
+                font-size: 0.9rem;
+            }
+
+            .hero h1 {
+                font-size: 2.2rem;
+            }
+
+            .space-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .membership-container {
+                flex-direction: column-reverse;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container header-inner">
+            <div class="logo">第一会所<span>亚洲</span></div>
+            <nav>
+                <ul>
+                    <li><a href="#">会所概况</a></li>
+                    <li><a href="#">空间展示</a></li>
+                    <li><a href="#">会员服务</a></li>
+                    <li><a href="#">商务合作</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <a href="#" class="btn">预约咨询</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content">
+                <h1>东方雅致，尊贵不凡</h1>
+                <p>第一会所亚洲为您呈现融合传统东方美学与现代奢华服务的高端休闲空间，开启您的专属尊贵体验。</p>
+                <a href="#membership" class="btn">了解会员权益</a>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="features">
+            <div class="container">
+                <div class="section-title">
+                    <h2>核心服务理念</h2>
+                    <p>我们致力于通过细节与匠心，为您提供超越期待的私密空间</p>
+                </div>
+                <div class="feature-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">✦</div>
+                        <h3>私密尊享</h3>
+                        <p>全封闭式独立包厢设计，配备专业安保团队，确保每一位会员的隐私与安全，享受绝对的私密时光。</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">✦</div>
+                        <h3>东方美学</h3>
+                        <p>汲取亚洲传统文化精髓，在空间设计、器物陈设与服务细节中，体现含蓄而深厚的文化底蕴。</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">✦</div>
+                        <h3>顶级服务</h3>
+                        <p>由经验丰富的高素质团队提供24小时贴身管家服务，细致入微，满足您一切个性化需求。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Spaces Section -->
+        <section class="spaces">
+            <div class="container">
+                <div class="section-title">
+                    <h2>精选空间</h2>
+                    <p>精心雕琢的每一处角落，皆是艺术品般的体验场所</p>
+                </div>
+                <div class="space-grid">
+                    <div class="space-item">
+                        <img src="https://picsum.photos/seed/lounge/600/800.jpg" alt="静谧茶室">
+                        <div class="space-overlay">
+                            <h3>静谧茶室</h3>
+                            <p>品茗论道，修身养性</p>
+                        </div>
+                    </div>
+                    <div class="space-item">
+                        <img src="https://picsum.photos/seed/bar/600/800.jpg" alt="顶层酒廊">
+                        <div class="space-overlay">
+                            <h3>顶层酒廊</h3>
+                            <p>俯瞰城市夜景，畅饮佳酿</p>
+                        </div>
+                    </div>
+                    <div class="space-item">
+                        <img src="https://picsum.photos/seed/room/600/800.jpg" alt="私人宴客厅">
+                        <div class="space-overlay">
+                            <h3>私人宴客厅</h3>
+                            <p>私密聚会，商务洽谈的理想之地</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Membership Section -->
+        <section id="membership" class="membership">
+            <div class="container membership-container">
+                <div class="membership-image"></div>
+                <div class="membership-content">
+                    <h2>会员尊享计划</h2>
+                    <p>成为第一会所亚洲的会员，不仅是身份的象征，更是对高品质生活态度的认同。我们提供多层次的会员权益，满足不同层次的高端需求。</p>
+                    <ul class="benefit-list">
+                        <li>专属客户经理一对一服务</li>
+                        <li>优先预订顶级包厢及活动席位</li>
+                        <li>定制化商务宴请与高端礼品服务</li>
+                        <li>定期举办会员专属社交沙龙</li>
+                        <li>旗下合作高端酒店及度假村权益</li>
+                    </ul>
+                    <br>
+                    <a href="#" class="btn">申请成为会员</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="features" style="background-color: #fafafa;">
+            <div class="container">
+                <div class="section-title">
+                    <h2>常见咨询</h2>
+                </div>
+                <div style="max-width: 800px; margin: 0 auto;">
+                    <article style="margin-bottom: 20px; border-bottom: 1px solid #eee; padding-bottom: 20px;">
+                        <h3 style="font-size: 1.2rem; margin-bottom: 10px;">如何成为第一会所的会员？</h3>
+                        <p style="color: var(--text-secondary);">会员申请需经过严格的背景审查与资质审核。您可以通过官网在线提交申请，或直接联系我们的客户经理预约面谈，提交相关证明文件。</p>
+                    </article>
+                    <article style="margin-bottom: 20px; border-bottom: 1px solid #eee; padding-bottom: 20px;">
+                        <h3 style="font-size: 1.2rem; margin-bottom: 10px;">会所是否提供餐饮服务？</h3>
+                        <p style="color: var(--text-secondary);">是的，我们提供顶级中餐及国际料理。所有食材均精选自全球优质供应商，并由名厨团队现场制作，确保每一道菜品都达到完美口感。</p>
+                    </article>
+                    <article style="margin-bottom: 20px; border-bottom: 1px solid #eee; padding-bottom: 20px;">
+                        <h3 style="font-size: 1.2rem; margin-bottom: 10px;">是否可以携带外宾入内？</h3>
+                        <p style="color: var(--text-secondary);">根据相关规定，会所欢迎外籍人士入内，但需提前向安保部门报备，并出示有效护照及会员邀请函，以便办理相关入场手续。</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="logo" style="margin-bottom: 20px;">第一会所<span>亚洲</span></div>
+                    <p style="color: #aaa; font-size: 0.9rem; line-height: 1.8;">
+                        致力于为亚洲高端人群提供私密、尊贵、极致的服务体验。我们相信，真正的奢华源于内心的宁静与文化的传承。
+                    </p>
+                </div>
+                <div class="footer-col">
+                    <h4>快速链接</h4>
+                    <ul>
+                        <li><a href="#">关于我们</a></li>
+                        <li><a href="#">会所环境</a></li>
+                        <li><a href="#">服务项目</a></li>
+                        <li><a href="#">会员招募</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>联系方式</h4>
+                    <ul>
+                        <li>地址：上海市静安区南京西路888号</li>
+                        <li>电话：021-1234 5678</li>
+                        <li>邮箱：vip@first-club-asia.com</li>
+                        <li>工作时间：10:00 - 24:00</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>关注我们</h4>
+                    <ul>
+                        <li><a href="#">微信公众号</a></li>
+                        <li><a href="#">微博</a></li>
+                        <li><a href="#">小红书</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                &copy; 2023 第一会所亚洲 版权所有 | 本网站仅供展示与咨询使用
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
