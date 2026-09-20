@@ -3,21 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="宿豫房屋出租 - 宿豫区真实房源信息发布与租赁服务平台，提供宿豫公寓、小区、商铺出租信息，房东直租，租客找房指南。">
-    <meta name="keywords" content="宿豫房屋出租,宿豫租房,宿豫公寓出租,宿豫小区出租,宿豫商铺出租,宿豫房东直租">
-    <title>宿豫房屋出租 - 宿豫区真实房源与租赁服务平台</title>
+    <title>巨大化入侵-全球异常巨型生物监测与防御档案</title>
+    <meta name="description" content="本站致力于记录全球范围内发生的巨大化生物入侵事件。提供详细的异常生物分类、防御战术指南、幸存者报告及科研分析，为应对巨型生物威胁提供权威参考。">
+    <meta name="keywords" content="巨大化入侵, 巨型生物, 异常生物, 生物入侵, 防御指南, 生存指南">
     <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
     <style>
         :root {
-            --primary-color: #0056b3;
-            --primary-hover: #004494;
-            --secondary-color: #f8f9fa;
-            --text-dark: #333333;
-            --text-gray: #666666;
-            --border-color: #e0e0e0;
-            --accent-color: #ff6b00;
-            --spacing-unit: 16px;
-            --container-width: 1200px;
+            --primary-color: #e63946;
+            --secondary-color: #1d3557;
+            --accent-color: #457b9d;
+            --bg-color: #f1faee;
+            --card-bg: #ffffff;
+            --text-main: #2b2d42;
+            --text-light: #8d99ae;
+            --border-radius: 8px;
+            --spacing-unit: 1rem;
         }
 
         * {
@@ -27,817 +27,623 @@
         }
 
         body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+            font-family: 'Helvetica Neue', Helvetica, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
             line-height: 1.6;
-            color: var(--text-dark);
-            background-color: #f5f7fa;
+            -webkit-font-smoothing: antialiased;
         }
 
         a {
             text-decoration: none;
             color: inherit;
-            transition: color 0.2s;
+            transition: color 0.3s ease;
         }
 
         ul {
             list-style: none;
         }
 
-        /* Utility */
-        .container {
-            max-width: var(--container-width);
-            margin: 0 auto;
-            padding: 0 var(--spacing-unit);
-        }
-
-        .btn {
-            display: inline-block;
-            padding: 10px 24px;
-            border-radius: 4px;
-            font-weight: 500;
-            cursor: pointer;
-            text-align: center;
-            border: none;
-            transition: background 0.2s;
-        }
-
-        .btn-primary {
-            background-color: var(--primary-color);
-            color: white;
-        }
-
-        .btn-primary:hover {
-            background-color: var(--primary-hover);
-        }
-
-        .btn-outline {
-            background-color: transparent;
-            border: 1px solid var(--primary-color);
-            color: var(--primary-color);
-        }
-
-        .btn-outline:hover {
-            background-color: var(--primary-color);
-            color: white;
-        }
-
-        .section-title {
-            font-size: 24px;
-            font-weight: 700;
-            margin-bottom: 20px;
-            color: var(--text-dark);
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-        }
-
-        .section-title::after {
-            content: '';
-            flex: 1;
-            height: 1px;
-            background-color: var(--border-color);
-            margin-left: 15px;
-        }
-
         /* Header */
         header {
-            background-color: white;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            background-color: var(--secondary-color);
+            color: #fff;
+            padding: 1rem 0;
             position: sticky;
             top: 0;
-            z-index: 100;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.2);
         }
 
-        .header-inner {
-            height: 70px;
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+        }
+
+        .header-content {
             display: flex;
-            align-items: center;
             justify-content: space-between;
+            align-items: center;
         }
 
         .logo {
-            font-size: 24px;
-            font-weight: 800;
-            color: var(--primary-color);
+            font-size: 1.5rem;
+            font-weight: 700;
             display: flex;
             align-items: center;
-            gap: 8px;
+            gap: 0.5rem;
         }
 
         .logo span {
-            color: var(--text-dark);
+            color: var(--primary-color);
         }
 
         nav ul {
             display: flex;
-            gap: 30px;
+            gap: 2rem;
         }
 
-        nav a {
-            font-weight: 500;
-            color: var(--text-gray);
-        }
-
-        nav a:hover, nav a.active {
+        nav a:hover {
             color: var(--primary-color);
         }
 
-        .header-actions {
+        .status-bar {
+            font-size: 0.9rem;
+            background: rgba(255,255,255,0.1);
+            padding: 0.25rem 0.75rem;
+            border-radius: 4px;
             display: flex;
-            gap: 12px;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .status-dot {
+            width: 8px;
+            height: 8px;
+            background-color: #2a9d8f;
+            border-radius: 50%;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0% { box-shadow: 0 0 0 0 rgba(42, 157, 143, 0.7); }
+            70% { box-shadow: 0 0 0 6px rgba(42, 157, 143, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(42, 157, 143, 0); }
         }
 
         /* Hero Section */
         .hero {
-            background: linear-gradient(135deg, #0056b3 0%, #004494 100%);
-            padding: 60px 0;
+            background: linear-gradient(rgba(29, 53, 87, 0.8), rgba(29, 53, 87, 0.6)), url('https://picsum.photos/seed/city/1920/600') no-repeat center center/cover;
             color: white;
+            padding: 4rem 0;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
         }
 
-        .hero-content {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
+        .hero::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, var(--primary-color), var(--accent-color));
         }
 
         .hero h1 {
-            font-size: 36px;
-            margin-bottom: 16px;
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.5);
         }
 
         .hero p {
-            font-size: 18px;
+            font-size: 1.1rem;
+            max-width: 700px;
+            margin: 0 auto 2rem;
             opacity: 0.9;
-            margin-bottom: 30px;
-            max-width: 600px;
         }
 
-        .search-box {
-            background: white;
-            padding: 8px;
-            border-radius: 8px;
-            display: flex;
-            width: 100%;
-            max-width: 600px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-        }
-
-        .search-box input {
-            flex: 1;
-            border: none;
-            padding: 12px 16px;
-            font-size: 16px;
-            outline: none;
-            border-radius: 6px 0 0 6px;
-        }
-
-        .search-box button {
-            background-color: var(--accent-color);
+        .cta-button {
+            display: inline-block;
+            background-color: var(--primary-color);
             color: white;
-            border: none;
-            padding: 0 30px;
-            border-radius: 0 6px 6px 0;
-            font-size: 16px;
+            padding: 0.8rem 2rem;
+            border-radius: var(--border-radius);
             font-weight: 600;
+            border: none;
             cursor: pointer;
+            transition: transform 0.2s, background-color 0.2s;
         }
 
-        .search-box button:hover {
-            background-color: #e65c00;
+        .cta-button:hover {
+            background-color: #c92a37;
+            transform: translateY(-2px);
         }
 
-        /* Stats */
-        .stats-bar {
-            background-color: white;
-            padding: 20px 0;
-            margin-top: -30px;
-            border-radius: 8px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+        /* Threat Levels */
+        .threat-levels {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            margin-top: -3rem;
             position: relative;
             z-index: 10;
         }
 
-        .stats-grid {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 20px;
+        .level-card {
+            background: var(--card-bg);
+            padding: 1.5rem;
+            border-radius: var(--border-radius);
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
             text-align: center;
+            border-top: 4px solid #ccc;
         }
 
-        .stat-item h3 {
-            font-size: 24px;
-            color: var(--primary-color);
-            margin-bottom: 4px;
-        }
+        .level-card.critical { border-color: var(--primary-color); }
+        .level-card.high { border-color: #e63946; }
+        .level-card.medium { border-color: #f4a261; }
+        .level-card.low { border-color: #2a9d8f; }
 
-        .stat-item p {
-            font-size: 14px;
-            color: var(--text-gray);
-        }
+        .level-title { font-size: 1.2rem; font-weight: bold; margin-bottom: 0.5rem; }
+        .level-desc { font-size: 0.85rem; color: var(--text-light); }
 
-        /* Main Content */
+        /* Main Content Grid */
         .main-content {
-            padding: 40px 0;
+            padding: 3rem 0;
         }
 
-        .layout-grid {
+        .section-title {
+            font-size: 1.8rem;
+            margin-bottom: 1.5rem;
+            color: var(--secondary-color);
+            border-left: 5px solid var(--primary-color);
+            padding-left: 1rem;
+        }
+
+        .grid-layout {
             display: grid;
-            grid-template-columns: 2.5fr 1fr;
-            gap: 30px;
+            grid-template-columns: 2fr 1fr;
+            gap: 2rem;
         }
 
-        /* Property List */
-        .filter-bar {
-            background: white;
-            padding: 16px;
-            border-radius: 8px;
-            margin-bottom: 24px;
+        /* Incident List */
+        .incident-list {
             display: flex;
-            flex-wrap: wrap;
-            gap: 16px;
-            align-items: center;
-            border: 1px solid var(--border-color);
+            flex-direction: column;
+            gap: 1.5rem;
         }
 
-        .filter-group {
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-
-        .filter-group label {
-            font-size: 14px;
-            color: var(--text-gray);
-        }
-
-        .filter-group select {
-            padding: 6px 12px;
-            border: 1px solid var(--border-color);
-            border-radius: 4px;
-            background-color: white;
-            color: var(--text-dark);
-            outline: none;
-        }
-
-        .property-card {
-            background: white;
-            border-radius: 8px;
+        .incident-card {
+            background: var(--card-bg);
+            border-radius: var(--border-radius);
             overflow: hidden;
-            border: 1px solid var(--border-color);
-            margin-bottom: 20px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
             display: flex;
-            transition: box-shadow 0.2s;
+            transition: box-shadow 0.3s ease;
         }
 
-        .property-card:hover {
-            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+        .incident-card:hover {
+            box-shadow: 0 8px 15px rgba(0,0,0,0.1);
         }
 
-        .card-img {
+        .incident-img {
             width: 240px;
-            height: 180px;
             object-fit: cover;
             flex-shrink: 0;
         }
 
-        .card-body {
-            padding: 20px;
-            flex: 1;
-            display: flex;
-            flex-direction: column;
+        .incident-info {
+            padding: 1.5rem;
+            flex-grow: 1;
         }
 
-        .card-header {
+        .incident-meta {
             display: flex;
             justify-content: space-between;
-            align-items: flex-start;
-            margin-bottom: 8px;
+            margin-bottom: 0.5rem;
+            font-size: 0.85rem;
+            color: var(--text-light);
         }
 
-        .price {
-            font-size: 22px;
-            font-weight: 700;
-            color: var(--accent-color);
-        }
-
-        .price span {
-            font-size: 14px;
-            font-weight: 400;
-            color: var(--text-gray);
-        }
-
-        .badge {
-            background-color: #e3f2fd;
-            color: var(--primary-color);
-            padding: 4px 8px;
+        .tag {
+            padding: 0.2rem 0.6rem;
             border-radius: 4px;
-            font-size: 12px;
             font-weight: 600;
+            font-size: 0.75rem;
+            text-transform: uppercase;
         }
 
-        .card-title {
-            font-size: 18px;
-            font-weight: 600;
-            margin-bottom: 8px;
-            color: var(--text-dark);
+        .tag.critical { background-color: rgba(230, 57, 70, 0.1); color: var(--primary-color); }
+        .tag.high { background-color: rgba(244, 162, 97, 0.1); color: #e76f51; }
+        .tag.medium { background-color: rgba(42, 157, 143, 0.1); color: #2a9d8f; }
+
+        .incident-title {
+            font-size: 1.3rem;
+            margin-bottom: 0.5rem;
+            color: var(--secondary-color);
         }
 
-        .card-info {
-            display: flex;
-            gap: 16px;
-            font-size: 14px;
-            color: var(--text-gray);
-            margin-bottom: 16px;
+        .incident-desc {
+            font-size: 0.95rem;
+            color: var(--text-main);
+            margin-bottom: 1rem;
         }
 
-        .card-info span {
-            display: flex;
-            align-items: center;
-            gap: 4px;
-        }
-
-        .card-footer {
-            margin-top: auto;
+        .incident-footer {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            font-size: 13px;
-            color: #999;
+            border-top: 1px solid #eee;
+            padding-top: 0.8rem;
+            font-size: 0.85rem;
+        }
+
+        .read-more {
+            color: var(--accent-color);
+            font-weight: 600;
         }
 
         /* Sidebar */
-        .sidebar-section {
-            background: white;
-            padding: 24px;
-            border-radius: 8px;
-            border: 1px solid var(--border-color);
-            margin-bottom: 30px;
+        .sidebar {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
         }
 
-        .sidebar-title {
-            font-size: 18px;
-            font-weight: 700;
-            margin-bottom: 16px;
-            padding-bottom: 10px;
-            border-bottom: 1px solid var(--border-color);
+        .sidebar-widget {
+            background: var(--card-bg);
+            padding: 1.5rem;
+            border-radius: var(--border-radius);
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+
+        .widget-title {
+            font-size: 1.1rem;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid #f1f1f1;
+            color: var(--secondary-color);
         }
 
         .guide-list li {
-            margin-bottom: 12px;
+            margin-bottom: 0.8rem;
+            padding-left: 1rem;
+            position: relative;
+            font-size: 0.95rem;
         }
 
-        .guide-list a {
-            display: flex;
-            justify-content: space-between;
-            font-size: 14px;
-            color: var(--text-dark);
+        .guide-list li::before {
+            content: '›';
+            position: absolute;
+            left: 0;
+            color: var(--primary-color);
+            font-weight: bold;
         }
 
         .guide-list a:hover {
             color: var(--primary-color);
         }
 
-        .guide-list span {
-            color: var(--text-gray);
-            font-size: 12px;
-        }
-
-        /* Contact Form */
-        .contact-form .form-group {
-            margin-bottom: 16px;
-        }
-
-        .contact-form label {
-            display: block;
-            margin-bottom: 6px;
-            font-size: 14px;
-            font-weight: 500;
-        }
-
-        .contact-form input, 
-        .contact-form textarea,
-        .contact-form select {
+        .map-placeholder {
             width: 100%;
-            padding: 10px;
-            border: 1px solid var(--border-color);
+            height: 200px;
+            background-color: #e9ecef;
             border-radius: 4px;
-            font-family: inherit;
-        }
-
-        .contact-form textarea {
-            resize: vertical;
-            height: 100px;
-        }
-
-        /* Tips */
-        .tips-box {
-            background-color: #fff8e1;
-            border: 1px solid #ffe082;
-            padding: 16px;
-            border-radius: 8px;
-            margin-bottom: 24px;
-        }
-
-        .tips-title {
-            color: #f57f17;
-            font-weight: 700;
-            margin-bottom: 8px;
             display: flex;
             align-items: center;
-            gap: 6px;
+            justify-content: center;
+            color: var(--text-light);
+            font-size: 0.9rem;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .map-placeholder::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-image: radial-gradient(#ccc 1px, transparent 1px);
+            background-size: 10px 10px;
+            opacity: 0.3;
         }
 
-        .tips-list li {
-            font-size: 14px;
-            color: #666;
-            margin-bottom: 6px;
-            list-style-type: disc;
-            margin-left: 20px;
+        /* Defense Protocols */
+        .protocols {
+            background-color: var(--secondary-color);
+            color: white;
+            padding: 4rem 0;
+            margin-top: 2rem;
+        }
+
+        .protocols-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .protocol-item {
+            background: rgba(255,255,255,0.05);
+            padding: 2rem;
+            border-radius: var(--border-radius);
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+
+        .protocol-icon {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            color: var(--accent-color);
+        }
+
+        .protocol-title {
+            font-size: 1.3rem;
+            margin-bottom: 0.8rem;
+        }
+
+        .protocol-text {
+            font-size: 0.95rem;
+            opacity: 0.8;
         }
 
         /* Footer */
         footer {
-            background-color: #2c3e50;
-            color: white;
-            padding: 40px 0 20px;
-            margin-top: 60px;
+            background-color: #1a1a1a;
+            color: #888;
+            padding: 3rem 0;
+            font-size: 0.9rem;
         }
 
-        .footer-grid {
+        .footer-content {
             display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 40px;
-            margin-bottom: 40px;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
         }
 
         .footer-col h4 {
-            font-size: 16px;
-            margin-bottom: 20px;
-            color: white;
+            color: #fff;
+            margin-bottom: 1rem;
         }
 
         .footer-col ul li {
-            margin-bottom: 10px;
-        }
-
-        .footer-col ul li a {
-            color: #bdc3c7;
-            font-size: 14px;
+            margin-bottom: 0.5rem;
         }
 
         .footer-col ul li a:hover {
-            color: white;
+            color: #fff;
         }
 
-        .copyright {
+        .footer-bottom {
             text-align: center;
-            padding-top: 20px;
-            border-top: 1px solid rgba(255,255,255,0.1);
-            color: #95a5a6;
-            font-size: 13px;
+            padding-top: 2rem;
+            border-top: 1px solid #333;
         }
 
         /* Responsive */
-        @media (max-width: 900px) {
-            .layout-grid {
+        @media (max-width: 768px) {
+            .grid-layout {
                 grid-template-columns: 1fr;
             }
-            
-            .stats-grid {
-                grid-template-columns: repeat(2, 1fr);
-            }
 
-            .card-img {
-                width: 180px;
-                height: 140px;
-            }
-        }
-
-        @media (max-width: 768px) {
-            .header-inner {
+            .incident-card {
                 flex-direction: column;
-                height: auto;
-                padding: 15px 0;
-                gap: 15px;
             }
 
-            nav ul {
-                gap: 15px;
-                font-size: 14px;
+            .incident-img {
+                width: 100%;
+                height: 200px;
+            }
+
+            nav {
+                display: none; /* Simplified for mobile example */
+            }
+
+            .header-content {
+                justify-content: center;
             }
 
             .hero h1 {
-                font-size: 28px;
-            }
-
-            .search-box {
-                flex-direction: column;
-            }
-
-            .search-box input {
-                border-radius: 6px;
-                margin-bottom: 8px;
-            }
-
-            .search-box button {
-                border-radius: 6px;
-                padding: 12px;
-            }
-
-            .footer-grid {
-                grid-template-columns: 1fr 1fr;
-            }
-        }
-
-        @media (max-width: 480px) {
-            .footer-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .property-card {
-                flex-direction: column;
-            }
-
-            .card-img {
-                width: 100%;
-                height: 200px;
+                font-size: 1.8rem;
             }
         }
     </style>
 </head>
 <body>
 
-    <header>
-        <div class="container header-inner">
-            <a href="#" class="logo">
-                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
-                <span>宿豫租房</span>
-            </a>
-            <nav>
-                <ul>
-                    <li><a href="#" class="active">首页</a></li>
-                    <li><a href="#">整租</a></li>
-                    <li><a href="#">合租</a></li>
-                    <li><a href="#">公寓</a></li>
-                    <li><a href="#">商铺</a></li>
-                    <li><a href="#">个人房源</a></li>
-                </ul>
-            </nav>
-            <div class="header-actions">
-                <a href="#" class="btn btn-outline">登录</a>
-                <a href="#" class="btn btn-primary">发布房源</a>
-            </div>
+<header>
+    <div class="container header-content">
+        <div class="logo">
+            <span>⚠</span> 巨大化入侵档案
         </div>
-    </header>
+        <nav>
+            <ul>
+                <li><a href="#">事件监测</a></li>
+                <li><a href="#">生物分类</a></li>
+                <li><a href="#">防御战术</a></li>
+                <li><a href="#">幸存者社区</a></li>
+                <li><a href="#">科研报告</a></li>
+            </ul>
+        </nav>
+        <div class="status-bar">
+            <div class="status-dot"></div>
+            <span>全球警报：中等</span>
+        </div>
+    </div>
+</header>
 
+<main>
     <section class="hero">
-        <div class="container hero-content">
-            <h1>宿豫房屋出租</h1>
-            <p>专注宿豫区本地真实房源，连接房东与租客，让租房更简单、更安全。</p>
-            <form class="search-box" onsubmit="event.preventDefault();">
-                <input type="text" placeholder="请输入小区名、街道或商圈（如：府苑小区）" aria-label="搜索房源">
-                <button type="submit">搜索</button>
-            </form>
+        <div class="container">
+            <h1>应对巨大化入侵威胁</h1>
+            <p>面对体型异常增长的生物体，科学防御与生存策略至关重要。本站提供实时数据、分类指南与紧急行动方案。</p>
+            <button class="cta-button" onclick="alert('正在连接全球防御网络...')">下载防御手册</button>
         </div>
     </section>
 
-    <div class="container">
-        <div class="stats-bar">
-            <div class="stats-grid">
-                <div class="stat-item">
-                    <h3>12,580+</h3>
-                    <p>在租房源</p>
-                </div>
-                <div class="stat-item">
-                    <h3>8,200+</h3>
-                    <p>认证房东</p>
-                </div>
-                <div class="stat-item">
-                    <h3>5,400+</h3>
-                    <p>本地小区</p>
-                </div>
-                <div class="stat-item">
-                    <h3>98%</h3>
-                    <p>好评率</p>
-                </div>
+    <section class="container">
+        <div class="threat-levels">
+            <div class="level-card critical">
+                <div class="level-title">极度危险</div>
+                <div class="level-desc">对城市造成结构性破坏，需立即军事介入。</div>
+            </div>
+            <div class="level-card high">
+                <div class="level-title">高危</div>
+                <div class="level-desc">威胁交通与基础设施，需区域封锁。</div>
+            </div>
+            <div class="level-card medium">
+                <div class="level-title">中等</div>
+                <div class="level-desc">局部生态影响，需监控与疏散。</div>
+            </div>
+            <div class="level-card low">
+                <div class="level-title">低危</div>
+                <div class="level-desc">个体异常，需研究观察。</div>
             </div>
         </div>
-    </div>
+    </section>
 
-    <main class="main-content">
-        <div class="container layout-grid">
-            <!-- Left Content -->
-            <section class="content-area">
-                <div class="section-title">
-                    <span>最新推荐</span>
-                    <a href="#" style="font-size:14px; color:var(--primary-color); font-weight:400;">查看更多 &gt;</a>
-                </div>
-
-                <!-- Filter -->
-                <div class="filter-bar">
-                    <div class="filter-group">
-                        <label>区域:</label>
-                        <select>
-                            <option>宿豫区全境</option>
-                            <option>仰化镇</option>
-                            <option>顺河街道</option>
-                            <option>井头乡</option>
-                            <option>黄墩镇</option>
-                        </select>
-                    </div>
-                    <div class="filter-group">
-                        <label>租金:</label>
-                        <select>
-                            <option>不限</option>
-                            <option>500元以下</option>
-                            <option>500-1000元</option>
-                            <option>1000-2000元</option>
-                            <option>2000元以上</option>
-                        </select>
-                    </div>
-                    <div class="filter-group">
-                        <label>户型:</label>
-                        <select>
-                            <option>不限</option>
-                            <option>1室1厅</option>
-                            <option>2室1厅</option>
-                            <option>3室1厅</option>
-                        </select>
-                    </div>
-                </div>
-
-                <!-- Property List -->
-                <article class="property-card">
-                    <img src="https://picsum.photos/seed/house1/240/180" alt="宿豫房屋出租" class="card-img">
-                    <div class="card-body">
-                        <div class="card-header">
-                            <h2 class="card-title">宿豫区政府旁 精装两居室 近地铁</h2>
-                            <div class="price">1800<span>/月</span></div>
+    <section class="container main-content">
+        <h2 class="section-title">近期入侵事件报告</h2>
+        <div class="grid-layout">
+            <div class="incident-list">
+                <!-- Incident 1 -->
+                <article class="incident-card">
+                    <img src="https://picsum.photos/seed/monster1/400/300" alt="巨型昆虫" class="incident-img">
+                    <div class="incident-info">
+                        <div class="incident-meta">
+                            <span>2023-10-24</span>
+                            <span class="tag critical">极度危险</span>
                         </div>
-                        <div class="card-info">
-                            <span>🏠 2室1厅 85㎡</span>
-                            <span>🛏️ 南北通透</span>
-                            <span>🚿 独立卫浴</span>
-                            <span>🏢 6楼/12层</span>
-                        </div>
-                        <p style="font-size:14px; color:#666; margin-bottom:12px; line-height:1.5;">精装修，家电齐全，拎包入住。小区环境优美，安保完善，距离宿豫区政府步行仅需5分钟，生活便利。</p>
-                        <div class="card-footer">
-                            <span>房东直租</span>
-                            <span>更新于 2小时前</span>
+                        <h3 class="incident-title">第7区：巨型蝉群爆发性迁徙</h3>
+                        <p class="incident-desc">由于异常气候变暖，一种体型约为普通蝉五倍的亚种在北半球多地出现。它们不仅对农作物造成毁灭性打击，其巨大的鸣叫声甚至能干扰电子设备。目前第7区已实施宵禁。</p>
+                        <div class="incident-footer">
+                            <span>分类：昆虫纲 - 异变种</span>
+                            <a href="#" class="read-more">查看完整报告 →</a>
                         </div>
                     </div>
                 </article>
 
-                <article class="property-card">
-                    <img src="https://picsum.photos/seed/house2/240/180" alt="宿豫房屋出租" class="card-img">
-                    <div class="card-body">
-                        <div class="card-header">
-                            <h2 class="card-title">宿豫万达广场附近 简单单间出租</h2>
-                            <div class="price">650<span>/月</span></div>
+                <!-- Incident 2 -->
+                <article class="incident-card">
+                    <img src="https://picsum.photos/seed/monster2/400/300" alt="巨型藤蔓" class="incident-img">
+                    <div class="incident-info">
+                        <div class="incident-meta">
+                            <span>2023-10-22</span>
+                            <span class="tag high">高危</span>
                         </div>
-                        <div class="card-info">
-                            <span>🏠 1室1厅 45㎡</span>
-                            <span>🛏️ 独立阳台</span>
-                            <span>🚿 干湿分离</span>
-                            <span>🏢 3楼/6层</span>
-                        </div>
-                        <p style="font-size:14px; color:#666; margin-bottom:12px; line-height:1.5;">位置极佳，紧邻万达广场，交通购物十分方便。室友为上班族，作息规律，适合追求安静生活的租客。</p>
-                        <div class="card-footer">
-                            <span>个人房源</span>
-                            <span>更新于 5小时前</span>
+                        <h3 class="incident-title">亚马逊雨林：巨型食人藤蔓入侵</h3>
+                        <p class="incident-desc">探险队报告发现雨林深处出现了直径超过两米的藤蔓植物，生长速度极快，能够缠绕并压碎树木。当地环保局已建议暂停该区域的所有旅游活动。</p>
+                        <div class="incident-footer">
+                            <span>分类：植物界 - 异变种</span>
+                            <a href="#" class="read-more">查看完整报告 →</a>
                         </div>
                     </div>
                 </article>
 
-                <article class="property-card">
-                    <img src="https://picsum.photos/seed/house3/240/180" alt="宿豫房屋出租" class="card-img">
-                    <div class="card-body">
-                        <div class="card-header">
-                            <h2 class="card-title">宿豫新城 阔景三居室 出租</h2>
-                            <div class="price">2800<span>/月</span></div>
+                <!-- Incident 3 -->
+                <article class="incident-card">
+                    <img src="https://picsum.photos/seed/monster3/400/300" alt="巨型变异犬" class="incident-img">
+                    <div class="incident-info">
+                        <div class="incident-meta">
+                            <span>2023-10-20</span>
+                            <span class="tag medium">中等</span>
                         </div>
-                        <div class="card-info">
-                            <span>🏠 3室2厅 120㎡</span>
-                            <span>🛏️ 大客厅落地窗</span>
-                            <span>🚗 有车位</span>
-                            <span>🏢 顶层复式</span>
-                        </div>
-                        <p style="font-size:14px; color:#666; margin-bottom:12px; line-height:1.5;">顶层复式结构，空间利用率高。小区绿化率高，环境安静，适合家庭居住或朋友合租。</p>
-                        <div class="card-footer">
-                            <span>房东直租</span>
-                            <span>更新于 昨天</span>
+                        <h3 class="incident-title">都市边缘：流浪犬群体异常增长</h3>
+                        <p class="incident-desc">多个社区报告流浪犬体型普遍增大30%以上，且攻击性显著增强。兽医协会正在紧急研究是否与当地水源污染有关。</p>
+                        <div class="incident-footer">
+                            <span>分类：哺乳纲 - 变异体</span>
+                            <a href="#" class="read-more">查看完整报告 →</a>
                         </div>
                     </div>
                 </article>
+            </div>
 
-                <div style="text-align:center; margin-top:30px;">
-                    <a href="#" class="btn btn-outline" style="padding: 10px 40px;">加载更多房源</a>
-                </div>
-            </section>
-
-            <!-- Right Sidebar -->
             <aside class="sidebar">
-                <!-- Contact Form -->
-                <div class="sidebar-section contact-form">
-                    <h3 class="sidebar-title">发布求租需求</h3>
-                    <form onsubmit="event.preventDefault();">
-                        <div class="form-group">
-                            <label>您的称呼</label>
-                            <input type="text" placeholder="请输入称呼" required>
-                        </div>
-                        <div class="form-group">
-                            <label>联系电话</label>
-                            <input type="tel" placeholder="请输入手机号" required>
-                        </div>
-                        <div class="form-group">
-                            <label>意向区域</label>
-                            <select>
-                                <option>宿豫区全境</option>
-                                <option>仰化镇</option>
-                                <option>顺河街道</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label>预算范围</label>
-                            <select>
-                                <option>面议</option>
-                                <option>1000元以下</option>
-                                <option>1000-2000元</option>
-                                <option>2000元以上</option>
-                            </select>
-                        </div>
-                        <button type="submit" class="btn btn-primary" style="width:100%;">免费发布</button>
-                    </form>
-                </div>
-
-                <!-- Guide -->
-                <div class="sidebar-section">
-                    <h3 class="sidebar-title">租房指南</h3>
+                <div class="sidebar-widget">
+                    <h3 class="widget-title">生存指南</h3>
                     <ul class="guide-list">
-                        <li><a href="#">宿豫租房流程介绍 <span>详细</span></a></li>
-                        <li><a href="#">如何识别虚假房源 <span>注意</span></a></li>
-                        <li><a href="#">宿豫各区域房价分析 <span>数据</span></a></li>
-                        <li><a href="#">租房合同注意事项 <span>法律</span></a></li>
-                        <li><a href="#">入住前验房检查清单 <span>技巧</span></a></li>
+                        <li><a href="#">遭遇巨型昆虫时的躲避技巧</a></li>
+                        <li><a href="#">如何识别变异植物的特征</a></li>
+                        <li><a href="#">家庭防御装备清单</a></li>
+                        <li><a href="#">紧急医疗包配置建议</a></li>
+                        <li><a href="#">遭遇生物袭击时的报警流程</a></li>
                     </ul>
                 </div>
 
-                <!-- Tips -->
-                <div class="tips-box">
-                    <h4 class="tips-title">⚠️ 防骗提醒</h4>
-                    <ul class="tips-list">
-                        <li>不要轻易相信远低于市场价的房源。</li>
-                        <li>核实房东身份及房产证信息。</li>
-                        <li>私下交易存在较大风险，建议通过平台担保。</li>
-                        <li>入住前务必检查水电煤气设施是否正常。</li>
-                    </ul>
+                <div class="sidebar-widget">
+                    <h3 class="widget-title">全球威胁地图</h3>
+                    <div class="map-placeholder">
+                        [ 实时监测数据可视化区域 ]
+                        <br>点击查看区域详情
+                    </div>
+                </div>
+
+                <div class="sidebar-widget" style="background: #fff3cd; border: 1px solid #ffeeba;">
+                    <h3 class="widget-title" style="color: #856404; border-color: #ffeeba;">注意</h3>
+                    <p style="font-size: 0.9rem; color: #856404;">
+                        近期部分沿海地区报告发现体型异常的鱼类搁浅。请远离海岸线，切勿接触不明生物。
+                    </p>
                 </div>
             </aside>
         </div>
-    </main>
+    </section>
 
-    <footer>
+    <section class="protocols">
         <div class="container">
-            <div class="footer-grid">
-                <div class="footer-col">
-                    <h4>关于宿豫租房</h4>
-                    <p style="color:#bdc3c7; font-size:14px; line-height:1.8;">
-                        我们致力于为宿豫区居民提供最真实、最安全的房屋租赁信息服务平台。连接房东与租客，让居住更美好。
-                    </p>
+            <h2 class="section-title" style="border-color: white; color: white;">防御协议与行动指南</h2>
+            <div class="protocols-grid">
+                <div class="protocol-item">
+                    <div class="protocol-icon">🛡️</div>
+                    <h3 class="protocol-title">物理隔离</h3>
+                    <p class="protocol-text">在巨型生物入侵初期，建立高强度的物理屏障（如混凝土墙、电网）是阻止其扩散的最有效手段。</p>
                 </div>
-                <div class="footer-col">
-                    <h4>房源分类</h4>
-                    <ul>
-                        <li><a href="#">整租公寓</a></li>
-                        <li><a href="#">合租房源</a></li>
-                        <li><a href="#">别墅豪宅</a></li>
-                        <li><a href="#">商铺出租</a></li>
-                    </ul>
+                <div class="protocol-item">
+                    <div class="protocol-icon">🔬</div>
+                    <h3 class="protocol-title">生物抑制</h3>
+                    <p class="protocol-text">科研机构正在研发针对特定基因序列的抑制剂，以抑制异常生物的生长激素分泌。</p>
                 </div>
-                <div class="footer-col">
-                    <h4>服务支持</h4>
-                    <ul>
-                        <li><a href="#">发布房源</a></li>
-                        <li><a href="#">联系客服</a></li>
-                        <li><a href="#">用户协议</a></li>
-                        <li><a href="#">隐私政策</a></li>
-                    </ul>
+                <div class="protocol-item">
+                    <div class="protocol-icon">🚨</div>
+                    <h3 class="protocol-title">公众疏散</h3>
+                    <p class="protocol-text">建立三级疏散机制。I级疏散涉及半径5公里内的所有居民；II级涉及半径20公里。</p>
                 </div>
-                <div class="footer-col">
-                    <h4>联系方式</h4>
-                    <ul>
-                        <li><a href="#">电话：0527-88888888</a></li>
-                        <li><a href="#">邮箱：service@sayu.com</a></li>
-                        <li><a href="#">地址：宿迁市宿豫区幸福路168号</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="copyright">
-                <p>&copy; 2023 宿豫房屋出租服务平台. All Rights Reserved. 本站所有信息均由用户发布，请谨慎甄别。</p>
             </div>
         </div>
-    </footer>
+    </section>
+</main>
+
+<footer>
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-col">
+                <h4>关于我们</h4>
+                <p>全球异常生物监测中心（GAMC）是一个致力于记录、分析并应对巨大化生物入侵事件的非营利性机构。我们的目标是保护人类文明免受未知生物威胁。</p>
+            </div>
+            <div class="footer-col">
+                <h4>快速链接</h4>
+                <ul>
+                    <li><a href="#">提交报告</a></li>
+                    <li><a href="#">志愿者招募</a></li>
+                    <li><a href="#">数据公开</a></li>
+                    <li><a href="#">隐私政策</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>紧急联系方式</h4>
+                <ul>
+                    <li>电话：+86-10-9999-8888</li>
+                    <li>传真：+86-10-9999-7777</li>
+                    <li>邮箱：emergency@gamc.org</li>
+                    <li>地址：第9区防御科技园区</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 全球异常生物监测中心. 保留所有权利. 本站数据仅供学术参考。</p>
+        </div>
+    </div>
+</footer>
 
 </body>
-              </html>
+</html>
